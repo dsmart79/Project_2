@@ -1,7 +1,7 @@
-## Project_2
+# Project_2
 
-# Red Team
-# Dan Smart, Derek Shashek, Minette James, and Suzanne Polk
+## Red Team
+## Dan Smart, Derek Shashek, Minette James, and Suzanne Polk
 
 Affordable Care Act data
 
