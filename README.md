@@ -19,3 +19,8 @@ Map Visualizations
   
 - Time series over the 4 years for enrollment
   - Addtional line chart with time series of enrollment
+
+## For Saturday:
+- Basic Flask Server
+- State and County level Leaflet maps
+- Skeleton HTML for main page and data page
