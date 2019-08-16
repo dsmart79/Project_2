@@ -5,7 +5,17 @@
 
 Affordable Care Act data
 
+Flask Application
+- Home page with graphs and charts
+- Data page with raw data in chart form
+
 Map Visualizations
 - Average age for state with a gradational state map
-- Types of plans purchased by state with a pop out pie chart
-- Time series over the 4 years for enrollment with a pop out line chart
+  - Pop outs with state names, total number of enrollments, and average age
+  - No additional charts
+  
+- Types of plans purchased by coutny
+  - Addtional pie chart with different plan types
+  
+- Time series over the 4 years for enrollment
+  - Addtional line chart with time series of enrollment
