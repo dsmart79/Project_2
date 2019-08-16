@@ -23,5 +23,5 @@ Map Visualizations
 ## For Saturday:
 - Basic Flask Server (Derek)
 - State and County level Leaflet maps (Suzanne)
-- Skeleton HTML for main page and data page (Dan)
+- Skeleton HTML for main page and data page- index.HTML and data.HTML (Dan)
 - C3 and pie chart visualizations (Minette)
