@@ -21,6 +21,7 @@ Map Visualizations
   - Addtional line chart with time series of enrollment
 
 ## For Saturday:
-- Basic Flask Server
-- State and County level Leaflet maps
-- Skeleton HTML for main page and data page
+- Basic Flask Server (Derek)
+- State and County level Leaflet maps (Suzanne)
+- Skeleton HTML for main page and data page (Dan)
+- C3 and pie chart visualizations (Minette)
