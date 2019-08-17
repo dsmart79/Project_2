@@ -1,64 +1,41 @@
 //base map
-var statesLayer = new L.layerGroup();
 
-    // Create the tile layer that will be the background of our map
-var lightmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token={accessToken}", {
-    attribution: "Map data &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"http://mapbox.com\">Mapbox</a>",
-    maxZoom: 18,
-    id: "mapbox.light",
-    accessToken: API_KEY
-});
+var map = L.map('map').setView([37.8, -96], 4);
 
-  // Create a baseMaps object to hold the lightmap layer
-var map =  L.map("map", {
-    "Light Map": lightmap,
-    center: [38.6270, -90.1994], //st. louis
-    zoom: 3,
-    layers: [statesLayer]
-});
-
-//Add lightMap tiles to the map
-lightMap = lightMap.addTo(map);
-
-//overlay object
-var overlayMaps = {
-    "States": statesLayer,
-};
-//basemap object
-var baseMap = {
-    "Light": lightMap,
-};
-
-// Create a layer control, pass in the baseMaps and overlayMaps. Add the layer control to the map
-L.control.layers(baseMaps, overlayMaps, {
-    collapsed: false
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
+	id: 'mapbox.light',
+	token: API_KEY
 }).addTo(map);
 
-//Create an overlayMaps object to hold the states polygon layer from choropleth
-//work on this
+L.geoJson(statesData).addTo(map);
+//or var myMap = L.map("map", {
+//   center: [37.7749, -122.4194],
+//   zoom: 13
+// });
+
+// L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+//   attribution: "Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, <a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>, Imagery © <a href='https://www.mapbox.com/'>Mapbox</a>",
+//   maxZoom: 18,
+//   id: "mapbox.streets",
+//   accessToken: API_KEY
+// }).addTo(myMap);
+
+// for statesData polygons overlay
 var link = 'https://leafletjs.com/examples/choropleth/us-states.js'
 
-//fetch GEOJson data foor the statesLayer
-d3.json(link, function(data){
-    createMap(data);
-    });
-    
-    function createMap(data) {
-        L.geoJson(data, {
-            onEachFeature: function (feature, layer) {
-                layer.bindPopup("<h3>Average Age: "+feature.properties.avgAge +
-                                "</h3><h3>Policy Type: "+feature.properties.metalLevel +
-            }               
-        }).addTo(statesLayer);  
-    }
+//popouts
+var info = L.control();
 
-.addTo(map);
+info.onAdd = function (map) {
+	this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+	this.update();
+	return this._div;
+};
 
 // method that we will use to update the control based on feature properties passed
-//need help with this
 info.update = function (props) {
-	this._div.innerHTML = '<h4>Average Age and Policy Type by State </h4>' +  (props ?
-		'<b>' + avgAge.pname + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
+	this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
+		'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
 		: 'Hover over a state');
 };
 
@@ -76,10 +53,13 @@ function resetHighlight(e) {
 
 //legend
 
-var legend = L.control({
-    position: 'bottomright'
-});
+var legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function (map) {
-	var div = L.DomUtil.create('div', 'info legend');
+
+	var div = L.DomUtil.create('div', 'info legend'),
+		// grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+		// labels = [];etc...
+
 };
+
