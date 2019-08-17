@@ -280,7 +280,7 @@ def conclusions():
     
 @app.route("/info")
 def welcome():
-    return 'Available routes: /avg_age, /state_count, /fips_count, /state_metal, /fips_metal, /state_issuer, /state_type, /fips_type'
+    return 'Available routes: /avg_age18, /state_count18, /fips_count18, /state_metal18, /fips_metal18, /state_issuer18, /fips_issuer18, /state_type18, /fips_type18'
 
 @app.route("/avg_age18")
 def avgAge():
