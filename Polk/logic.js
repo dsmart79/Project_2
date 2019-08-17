@@ -29,12 +29,12 @@ var baseMaps = {
     "Light": lightMap,
 };
 
-//add base and overlay layers
+  //add base and overlay layers
 L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
 }).addTo(map);
 
-var link = "https://leafletjs.com/examples/choropleth/us-states.js"
+var link = "us-states.json"
 
 // fetch GEOJson data for the states layer wuth geometry
 d3.json(link, function(data){
@@ -44,8 +44,8 @@ d3.json(link, function(data){
 function createMap(data) {
 	L.geoJson(data, {
 		onEachFeature: function (feature, layer) {
-			layer.bindPopup("<h3>Location: "+feature.properties.place + "</h3>"
-		},
+      layer.bindPopup("<h3>Location: "+feature.properties.place + "</h3>"
+    },
 	}).addTo(statesLayer);
 
 	//legend
