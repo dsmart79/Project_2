@@ -1,65 +1,58 @@
+//creating empty layergroup for later adding to map
 //base map
 
-var map = L.map('map').setView([37.8, -96], 4);
+var statesLayer = new legend.layerGroup;
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
-	id: 'mapbox.light',
-	token: API_KEY
+//light tile layer
+var lightMap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+  maxZoom: 18,
+  id: "mapbox.light",
+  accessToken: API_KEY
+});
+
+//create map with layer
+var map =  L.map("map", {
+    center: [38.6270, -90.1994], //st. louis
+    zoom: 3,
+    layers: [earthquakeLayer]
+});
+
+//Add lightMap and satelliteMap tiles to the map
+lightMap = lightMap.addTo(map);
+
+//overlay object
+var overlayMaps = {
+    "states": statesLayer,
+};
+//basemap object
+var baseMaps = {
+    "Light": lightMap,
+};
+
+//add base and overlay layers
+L.control.layers(baseMaps, overlayMaps, {
+    collapsed: false
 }).addTo(map);
 
-L.geoJson(statesData).addTo(map);
-//or var myMap = L.map("map", {
-//   center: [37.7749, -122.4194],
-//   zoom: 13
-// });
+var link = "https://leafletjs.com/examples/choropleth/us-states.js"
 
-// L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
-//   attribution: "Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, <a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>, Imagery © <a href='https://www.mapbox.com/'>Mapbox</a>",
-//   maxZoom: 18,
-//   id: "mapbox.streets",
-//   accessToken: API_KEY
-// }).addTo(myMap);
+// fetch GEOJson data for the states layer wuth geometry
+d3.json(link, function(data){
+  createMap(data);
+});
 
-// for statesData polygons overlay
-var link = 'https://leafletjs.com/examples/choropleth/us-states.js'
+function createMap(data) {
+	L.geoJson(data, {
+		onEachFeature: function (feature, layer) {
+			layer.bindPopup("<h3>Location: "+feature.properties.place + "</h3>"
+		},
+	}).addTo(statesLayer);
 
-//popouts
-var info = L.control();
-
-info.onAdd = function (map) {
-	this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-	this.update();
-	return this._div;
-};
-
-// method that we will use to update the control based on feature properties passed
-info.update = function (props) {
-	this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
-		'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
-		: 'Hover over a state');
-};
-
-info.addTo(map);
-
-//hover
-
-function highlightFeature(e) {
-	info.update(layer.feature.properties);
-}
-
-function resetHighlight(e) {
-	info.update();
-}
-
-//legend
-
-var legend = L.control({position: 'bottomright'});
-
-legend.onAdd = function (map) {
-
-	var div = L.DomUtil.create('div', 'info legend'),
-		// grades = [0, 10, 20, 50, 100, 200, 500, 1000],
-		// labels = [];etc...
+	//legend
+    var legend = L.control({position: "bottomright"});
+    legend.onAdd = function() {
+		var div = L.DomUtil.create("div", "legend");
+	};
+	legend.addTo(map);
 
 };
-
