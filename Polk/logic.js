@@ -34,7 +34,7 @@ L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
 }).addTo(map);
 
-var link = "https://leafletjs.com/examples/choropleth/us-states.js"
+var link = "us-states.json"
 
 // fetch GEOJson data for the states layer wuth geometry
 d3.json(link, function(data){
