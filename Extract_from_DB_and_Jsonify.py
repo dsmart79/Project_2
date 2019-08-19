@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[28]:
+# In[1]:
 
 
 ##dependencies
@@ -12,7 +12,7 @@ import json
 import sqlalchemy as db
 
 
-# In[29]:
+# In[2]:
 
 
 #create db connection to each table and bring it in as a pandas df
@@ -53,7 +53,7 @@ ResultSet = ResultProxy.fetchall()
 h18 = pd.DataFrame(ResultSet)
 
 
-# In[30]:
+# In[3]:
 
 
 #name columns
@@ -63,7 +63,7 @@ h17.columns = ['State','County','Metal','Issuer','Type','FIPS']
 h18.columns = ['State','County','Metal','Issuer','Type','FIPS']
 
 
-# In[31]:
+# In[4]:
 
 
 #create groupbys to operate on
@@ -74,7 +74,7 @@ fips15_metal_groupby = h15.groupby(['Metal','FIPS'])
 state15_issuer_groupby = h15.groupby(['Issuer','State'])
 fips15_issuer_groupby = h15.groupby(['Issuer','FIPS'])
 state15_type_groupby = h15.groupby(['Type','State'])
-fips15_type_groupby = h15.groupby(['Type','State'])
+fips15_type_groupby = h15.groupby(['Type','FIPS'])
 
 state16_groupby = h16.groupby('State')
 fips16_groupby = h16.groupby('FIPS')
@@ -83,7 +83,7 @@ fips16_metal_groupby = h16.groupby(['Metal','FIPS'])
 state16_issuer_groupby = h16.groupby(['Issuer','State'])
 fips16_issuer_groupby = h16.groupby(['Issuer','FIPS'])
 state16_type_groupby = h16.groupby(['Type','State'])
-fips16_type_groupby = h16.groupby(['Type','State'])
+fips16_type_groupby = h16.groupby(['Type','FIPS'])
 
 state17_groupby = h17.groupby('State')
 fips17_groupby = h17.groupby('FIPS')
@@ -92,7 +92,7 @@ fips17_metal_groupby = h17.groupby(['Metal','FIPS'])
 state17_issuer_groupby = h17.groupby(['Issuer','State'])
 fips17_issuer_groupby = h17.groupby(['Issuer','FIPS'])
 state17_type_groupby = h17.groupby(['Type','State'])
-fips17_type_groupby = h17.groupby(['Type','State'])
+fips17_type_groupby = h17.groupby(['Type','FIPS'])
 
 state18_groupby = h18.groupby('State')
 fips18_groupby = h18.groupby('FIPS')
@@ -101,10 +101,10 @@ fips18_metal_groupby = h18.groupby(['Metal','FIPS'])
 state18_issuer_groupby = h18.groupby(['Issuer','State'])
 fips18_issuer_groupby = h18.groupby(['Issuer','FIPS'])
 state18_type_groupby = h18.groupby(['Type','State'])
-fips18_type_groupby = h18.groupby(['Type','State'])
+fips18_type_groupby = h18.groupby(['Type','FIPS'])
 
 
-# In[32]:
+# In[26]:
 
 
 #get counts for each groupby
@@ -118,6 +118,7 @@ fips15_count = fips15_groupby[['Type']].count()
 fips15_count['Type'] = fips15_count['Type'].astype(str)
 fips15_count = fips15_count.reset_index(drop=False)
 fips15_count.columns = ['FIPS','Count']
+fips15_count['FIPS'] = fips15_count['FIPS'].astype(str)
 
 state16_count = state16_groupby[['FIPS']].count()
 state16_count['FIPS'] = state16_count['FIPS'].astype(str)
@@ -128,6 +129,7 @@ fips16_count = fips16_groupby[['Type']].count()
 fips16_count['Type'] = fips16_count['Type'].astype(str)
 fips16_count = fips16_count.reset_index(drop=False)
 fips16_count.columns = ['FIPS','Count']
+fips16_count['FIPS'] = fips16_count['FIPS'].astype(str)
 
 state17_count = state17_groupby[['FIPS']].count()
 state17_count['FIPS'] = state17_count['FIPS'].astype(str)
@@ -138,6 +140,7 @@ fips17_count = fips17_groupby[['Type']].count()
 fips17_count['Type'] = fips17_count['Type'].astype(str)
 fips17_count = fips17_count.reset_index(drop=False)
 fips17_count.columns = ['FIPS','Count']
+fips17_count['FIPS'] = fips17_count['FIPS'].astype(str)
 
 state18_count = state18_groupby[['FIPS']].count()
 state18_count['FIPS'] = state18_count['FIPS'].astype(str)
@@ -148,9 +151,10 @@ fips18_count = fips18_groupby[['Type']].count()
 fips18_count['Type'] = fips18_count['Type'].astype(str)
 fips18_count = fips18_count.reset_index(drop=False)
 fips18_count.columns = ['FIPS','Count']
+fips18_count['FIPS'] = fips18_count['FIPS'].astype(str)
 
 
-# In[33]:
+# In[6]:
 
 
 #get count for each metal type by state and FIPS
@@ -163,6 +167,7 @@ fips15_metal_count = fips15_metal_groupby[['State']].count()
 fips15_metal_count['State'] = fips15_metal_count['State'].astype(str)
 fips15_metal_count = fips15_metal_count.reset_index(drop=False)
 fips15_metal_count.columns = 'Metal','FIPS','Count'
+fips15_metal_count['FIPS'] = fips15_metal_count['FIPS'].astype(str)
 
 state16_metal_count = state16_metal_groupby[['FIPS']].count()
 state16_metal_count['FIPS'] = state16_metal_count['FIPS'].astype(str)
@@ -173,6 +178,7 @@ fips16_metal_count = fips16_metal_groupby[['State']].count()
 fips16_metal_count['State'] = fips16_metal_count['State'].astype(str)
 fips16_metal_count = fips16_metal_count.reset_index(drop=False)
 fips16_metal_count.columns = 'Metal','FIPS','Count'
+fips16_metal_count['FIPS'] = fips16_metal_count['FIPS'].astype(str)
 
 state17_metal_count = state17_metal_groupby[['FIPS']].count()
 state17_metal_count['FIPS'] = state17_metal_count['FIPS'].astype(str)
@@ -183,6 +189,7 @@ fips17_metal_count = fips17_metal_groupby[['State']].count()
 fips17_metal_count['State'] = fips17_metal_count['State'].astype(str)
 fips17_metal_count = fips17_metal_count.reset_index(drop=False)
 fips17_metal_count.columns = 'Metal','FIPS','Count'
+fips17_metal_count['FIPS'] = fips17_metal_count['FIPS'].astype(str)
 
 state18_metal_count = state18_metal_groupby[['FIPS']].count()
 state18_metal_count['FIPS'] = state18_metal_count['FIPS'].astype(str)
@@ -193,9 +200,10 @@ fips18_metal_count = fips18_metal_groupby[['State']].count()
 fips18_metal_count['State'] = fips18_metal_count['State'].astype(str)
 fips18_metal_count = fips18_metal_count.reset_index(drop=False)
 fips18_metal_count.columns = 'Metal','FIPS','Count'
+fips18_metal_count['FIPS'] = fips18_metal_count['FIPS'].astype(str)
 
 
-# In[34]:
+# In[25]:
 
 
 #get count for each issuer by state and FIPS
@@ -208,6 +216,7 @@ fips15_issuer_count = fips15_issuer_groupby[['State']].count()
 fips15_issuer_count[['State']] = fips15_issuer_count[['State']].astype(str)
 fips15_issuer_count = fips15_issuer_count.reset_index(drop=False)
 fips15_issuer_count.columns = ['Issuer','FIPS','Count']
+fips15_issuer_count['FIPS'] = fips15_issuer_count['FIPS'].astype(str)
 
 state16_issuer_count = state16_issuer_groupby[['FIPS']].count()
 state16_issuer_count[['FIPS']] = state16_issuer_count[['FIPS']].astype(str)
@@ -218,6 +227,7 @@ fips16_issuer_count = fips16_issuer_groupby[['State']].count()
 fips16_issuer_count[['State']] = fips16_issuer_count[['State']].astype(str)
 fips16_issuer_count = fips16_issuer_count.reset_index(drop=False)
 fips16_issuer_count.columns = ['Issuer','FIPS','Count']
+fips16_issuer_count['FIPS'] = fips16_issuer_count['FIPS'].astype(str)
 
 state17_issuer_count = state17_issuer_groupby[['FIPS']].count()
 state17_issuer_count[['FIPS']] = state17_issuer_count[['FIPS']].astype(str)
@@ -228,6 +238,7 @@ fips17_issuer_count = fips17_issuer_groupby[['State']].count()
 fips17_issuer_count[['State']] = fips17_issuer_count[['State']].astype(str)
 fips17_issuer_count = fips17_issuer_count.reset_index(drop=False)
 fips17_issuer_count.columns = ['Issuer','FIPS','Count']
+fips17_issuer_count['FIPS'] = fips17_issuer_count['FIPS'].astype(str)
 
 state18_issuer_count = state18_issuer_groupby[['FIPS']].count()
 state18_issuer_count[['FIPS']] = state18_issuer_count[['FIPS']].astype(str)
@@ -238,9 +249,10 @@ fips18_issuer_count = fips18_issuer_groupby[['State']].count()
 fips18_issuer_count[['State']] = fips18_issuer_count[['State']].astype(str)
 fips18_issuer_count = fips18_issuer_count.reset_index(drop=False)
 fips18_issuer_count.columns = ['Issuer','FIPS','Count']
+fips18_issuer_count['FIPS'] = fips18_issuer_count['FIPS'].astype(str)
 
 
-# In[60]:
+# In[24]:
 
 
 #get count of plan type for each state and FIPS
@@ -254,6 +266,7 @@ fips15_type_count['State'] = fips15_type_count['State'].astype(str)
 fips15_type_count.columns = (['Count'])
 fips15_type_count = fips15_type_count.reset_index(drop=False)
 fips15_type_count.columns = ['Type','FIPS','Count']
+fips15_type_count['FIPS'] = fips15_type_count['FIPS'].astype(str)
 
 state16_type_count = state16_type_groupby[['FIPS']].count()
 state16_type_count['FIPS'] = state16_type_count['FIPS'].astype(str)
@@ -265,6 +278,7 @@ fips16_type_count['State'] = fips16_type_count['State'].astype(str)
 fips16_type_count.columns = (['Count'])
 fips16_type_count = fips16_type_count.reset_index(drop=False)
 fips16_type_count.columns = ['Type','FIPS','Count']
+fips16_type_count['FIPS'] = fips16_type_count['FIPS'].astype(str)
 
 state17_type_count = state17_type_groupby[['FIPS']].count()
 state17_type_count['FIPS'] = state17_type_count['FIPS'].astype(str)
@@ -276,6 +290,7 @@ fips17_type_count['State'] = fips17_type_count['State'].astype(str)
 fips17_type_count.columns = (['Count'])
 fips17_type_count = fips17_type_count.reset_index(drop=False)
 fips17_type_count.columns = ['Type','FIPS','Count']
+fips17_type_count['FIPS'] = fips17_type_count['FIPS'].astype(str)
 
 state18_type_count = state18_type_groupby[['FIPS']].count()
 state18_type_count['FIPS'] = state18_type_count['FIPS'].astype(str)
@@ -287,9 +302,10 @@ fips18_type_count['State'] = fips18_type_count['State'].astype(str)
 fips18_type_count.columns = (['Count'])
 fips18_type_count = fips18_type_count.reset_index(drop=False)
 fips18_type_count.columns = ['Type','FIPS','Count']
+fips18_type_count['FIPS'] = fips18_type_count['FIPS'].astype(str)
 
 
-# In[63]:
+# In[10]:
 
 
 #turn dfs into dicts for jsonification
@@ -529,7 +545,7 @@ for plan in pointer.iterrows():
 ###end of year
 
 
-# In[66]:
+# In[11]:
 
 
 app = Flask(__name__)
@@ -684,6 +700,12 @@ def fipsType18():
 ##end of year
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
