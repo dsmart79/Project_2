@@ -34,18 +34,18 @@ L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
 }).addTo(map);
 
-var link = "us-states.json"
+var states = "us-states.json"
 
 // fetch GEOJson data for the states layer wuth geometry
-d3.json(link, function(data){
-  createMap(data);
+d3.json(states, function(statesData){
+  createMap(statesData);
 });
 
-function createMap(data) {
+function createMap(statesData) {
 	L.geoJson(data, {
 		onEachFeature: function (feature, layer) {
       layer.bindPopup("<h3>Location: "+feature.properties.place + "</h3>"
-    },
+      )},
 	}).addTo(statesLayer);
 
 	//legend
