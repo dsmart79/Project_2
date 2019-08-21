@@ -1,11 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-<<<<<<< HEAD
 # In[1]:
-=======
 # In[87]:
->>>>>>> master
 
 
 # Imports
@@ -22,11 +19,8 @@ import sqlalchemy as db
 
 # ## CSV to DataFrame
 
-<<<<<<< HEAD
 # In[2]:
-=======
 # In[88]:
->>>>>>> master
 
 
 # import CSVs 
@@ -35,16 +29,13 @@ health16_df = pd.read_csv('./CSVs/Health_Ins_2016.csv')
 health17_df = pd.read_csv('./CSVs/Health_Ins_2017.csv')
 health18_df = pd.read_csv('./CSVs/Health_Ins_2018.csv')
 iowa_counties = pd.read_csv('./CSVs/IA_counties.csv')
-<<<<<<< HEAD
 
 
 # In[3]:
-=======
 ky_counties = pd.read_csv('./CSVs/KY_FIPS.csv')
 
 
 # In[89]:
->>>>>>> master
 
 
 # rename columns
@@ -52,11 +43,8 @@ health15_df = health15_df[['State Code','County Name','Metal Level','Issuer Name
 health16_df = health16_df[['State Code','County Name','Metal Level','Issuer Name','Plan Type']]
 
 
-<<<<<<< HEAD
 # In[4]:
-=======
 # In[90]:
->>>>>>> master
 
 
 #lowercase county names for lookups
@@ -66,9 +54,7 @@ health17_df['County Name'] = health17_df['County Name'].str.lower()
 health18_df['County Name'] = health18_df['County Name'].str.lower()
 
 
-<<<<<<< HEAD
 # In[5]:
-=======
 # In[91]:
 
 
@@ -81,7 +67,6 @@ ky_counties.columns = ['Lookup','fips']
 
 
 # In[92]:
->>>>>>> master
 
 
 #combine state codes and county names for lookups
@@ -99,22 +84,16 @@ health18_df['Lookup'] = health18_df['Lookup'].str.replace('-','')
 health18_df['Lookup'] = health18_df['Lookup'].str.replace(' ','')
 
 
-<<<<<<< HEAD
 # In[6]:
-=======
 # In[93]:
->>>>>>> master
 
 
 lookup17 = health17_df[['Lookup','FIPS County Code']]
 lookup17.columns = ['Lookup', 'fips']
 
 
-<<<<<<< HEAD
 # In[7]:
-=======
 # In[94]:
->>>>>>> master
 
 
 #build lookup table from 2017 fips info
@@ -131,11 +110,8 @@ while counter < len(unique_lookup):
 lookup_table = pd.DataFrame(lookup_table)
 
 
-<<<<<<< HEAD
 # In[8]:
-=======
 # In[95]:
->>>>>>> master
 
 
 #add missing counties to lookup table
@@ -147,32 +123,26 @@ lookup_table = lookup_table.append({'Lookup':'IAcerrogordo','fips':'19033'},igno
 lookup_table = lookup_table.append({'Lookup':'IAcedar','fips':'19031'},ignore_index=True)
 lookup_table = lookup_table.append({'Lookup':'IAcass','fips':'19029'},ignore_index=True)
 lookup_table = lookup_table.append(iowa_counties)
-<<<<<<< HEAD
 
 
 # In[9]:
-=======
 lookup_table = lookup_table.append(ky_counties)
 
 
 # In[96]:
->>>>>>> master
 
 
 #merge in lookup table to 15 and 16 data to add fips column
 l_15 = health15_df.merge(lookup_table,on='Lookup',how='left')
 l_16 = health16_df.merge(lookup_table,on='Lookup',how='left')
-<<<<<<< HEAD
 
 
 # In[10]:
-=======
 l_17 = health17_df.merge(lookup_table,on='Lookup',how='left')
 l_18 = health18_df.merge(lookup_table,on='Lookup',how='left')
 
 
 # In[97]:
->>>>>>> master
 
 
 #remove lookup column and standardize order and names
@@ -180,7 +150,6 @@ health15_df = l_15[['State Code','County Name','Metal Level','Issuer Name','Plan
 health15_df.columns = ['State Code','County Name','Metal Level','Issuer Name','Plan Type','Fips']
 health16_df = l_16[['State Code','County Name','Metal Level','Issuer Name','Plan Type','fips']]
 health16_df.columns = ['State Code','County Name','Metal Level','Issuer Name','Plan Type','Fips']
-<<<<<<< HEAD
 health17_df = health17_df[['State Code','County Name','Metal Level','Issuer Name','Plan Type','FIPS County Code']]
 health17_df.columns = ['State Code','County Name','Metal Level','Issuer Name','Plan Type','Fips']
 health18_df = health18_df[['State Code','County Name','Metal Level','Issuer Name','Plan Type','FIPS County Code']]
@@ -188,7 +157,6 @@ health18_df.columns = ['State Code','County Name','Metal Level','Issuer Name','P
 
 
 # In[11]:
-=======
 health17_df = l_17[['State Code','County Name','Metal Level','Issuer Name','Plan Type','fips']]
 health17_df.columns = ['State Code','County Name','Metal Level','Issuer Name','Plan Type','Fips']
 health18_df = l_18[['State Code','County Name','Metal Level','Issuer Name','Plan Type','fips']]
@@ -196,7 +164,6 @@ health18_df.columns = ['State Code','County Name','Metal Level','Issuer Name','P
 
 
 # In[98]:
->>>>>>> master
 
 
 #Write dfs out as objects to add to db
@@ -229,11 +196,8 @@ for record in pointer.iterrows():
     counter = counter + 1
 
 
-<<<<<<< HEAD
 # In[12]:
-=======
 # In[99]:
->>>>>>> master
 
 
 #Create sqlite DB
@@ -281,11 +245,8 @@ h18 = db.Table('h18', metadata,
 metadata.create_all(engine)
 
 
-<<<<<<< HEAD
 # In[13]:
-=======
 # In[100]:
->>>>>>> master
 
 
 #make db connections and write in objects for each year
