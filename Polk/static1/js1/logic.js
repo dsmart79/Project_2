@@ -20,8 +20,8 @@ var map = L.map("map", {
   layers: [lightMap, statesLayer]
 });
 
-var counties = "./static/geoJson/states_county.json"
-var states = "./static/geoJson/us_states.json"
+var counties = "./static1/geojson1/states_county.json"
+var states = "./static1/geojson1/modifiedStates.json"
 
 //basemap object
 var baseMaps = {
@@ -37,54 +37,64 @@ var overlayMaps = {
 //add base and overlay layers
 L.control.layers(overlayMaps).addTo(map);
 
-// fetch GEOJson data for the earthquake layer
+// fetch GEOJson data for the counties layer
 d3.json(counties, function (statesCountyData) {
   createMap(statesCountyData);
 });
+//fetch metal level and ... for each year in 
+d3.json()
 
-//template literal substituted here change popup in html
 function createMap(statesCountyData) {
   L.geoJson(statesCountyData, {
     onEachFeature: function (features, layer) {
-      layer.bindPopup("<h3>" + features.properties.NAME + "<h3>")
-      //                         "</h3><h3>Magnitude: "+feature.properties.mag +
-      //                         "</h3><h3>DateTime: "+ new Date(feature.properties.time)+"</h3>")
-
-
-    },
-    //fix point to states and then zoom and then point to counties
-    //     pointToLayer: function (feature, latlng) {
-    //         return new L.circleMarker(latlng, {
-    //             radius: feature.properties.mag*5,
-    //             fillColor: circleColor(feature.properties.mag),
-    //             fillOpacity: 0.8,
-    //             color: "black",
-    //             weight: .5
-    //         })
-    //     }
+      layer.bindPopup("<h3>" + features.properties.NAME + "</h3>")},
   }).addTo(countyLayer);
 
 
-  // fetch GEOJson data for the earthquake layer
+  // fetch GEOJson data for the states layer
   d3.json(states, function (statesData) {
     createMap(statesData);
   });
+  function getColor(sc) {
+    return sc > 5000 ? '#084594' :
+          sc > 3000  ? '#2171b5' :
+           sc > 1000  ? '#4292c6' :
+           sc > 800  ? '#6baed6' :
+           sc > 400   ? '#9ecae1' :
+           sc > 100   ? '#c6dbef' :
+                      '#eff3ff';
+  }
+  function style(feature) {
+    return {
+      fillColor: getColor(feature.properties.state_count15),
+      weight: 2,
+      opacity: 1,
+      color: 'black',
+      dashArray: '3',
+      fillOpacity: 0.7
+    };
+  }
+  L.geoJson(statesData, {style: style}).addTo(statesLayer);
 
   function createMap(statesData) {
     L.geoJson(statesData, {
       onEachFeature: function (features, layer) {
-        layer.bindPopup("<h3>" + features.properties.name + "<h3>")
-
-
+        layer.bindPopup("<h3>" + features.properties.name + 
+        "</h3><h3>State Count: "+feature.properties.state_count15 +"</h3>")
       },
     }).addTo(statesLayer);
 
+       // fix point to states and then zoom and then point to counties
+       pointToLayer: function (feature, latlng) {
+        
+      }
     //legend
     var legend = L.control({
       position: "bottomright"
     });
     legend.onAdd = function () {
       var div = L.DomUtil.create("div", "legend");
+      //add colors legend for states
       // var magnitudes = [1,2,3,4,5,5.1];
       // var colors = magnitudes.map(d=>circleColor(d));
       // labels=[];
