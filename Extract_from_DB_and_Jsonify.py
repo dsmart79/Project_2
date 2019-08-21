@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[72]:
+# In[1]:
 
 
 ##dependencies
@@ -12,7 +12,7 @@ import json
 import sqlalchemy as db
 
 
-# In[73]:
+# In[2]:
 
 
 #create db connection to each table and bring it in as a pandas df
@@ -53,7 +53,7 @@ ResultSet = ResultProxy.fetchall()
 h18 = pd.DataFrame(ResultSet)
 
 
-# In[74]:
+# In[3]:
 
 
 #name columns
@@ -63,7 +63,7 @@ h17.columns = ['State','County','Metal','Issuer','Type','FIPS']
 h18.columns = ['State','County','Metal','Issuer','Type','FIPS']
 
 
-# In[75]:
+# In[10]:
 
 
 #create groupbys to operate on
@@ -104,7 +104,7 @@ state18_type_groupby = h18.groupby(['Type','State'])
 fips18_type_groupby = h18.groupby(['Type','FIPS'])
 
 
-# In[76]:
+# In[11]:
 
 
 #get counts for each groupby
@@ -154,7 +154,7 @@ fips18_count.columns = ['FIPS','Count']
 fips18_count['FIPS'] = fips18_count['FIPS'].astype(str)
 
 
-# In[77]:
+# In[12]:
 
 
 #get count for each metal type by state and FIPS
@@ -203,7 +203,7 @@ fips18_metal_count.columns = 'Metal','FIPS','Count'
 fips18_metal_count['FIPS'] = fips18_metal_count['FIPS'].astype(str)
 
 
-# In[78]:
+# In[13]:
 
 
 #get count for each issuer by state and FIPS
@@ -252,7 +252,7 @@ fips18_issuer_count.columns = ['Issuer','FIPS','Count']
 fips18_issuer_count['FIPS'] = fips18_issuer_count['FIPS'].astype(str)
 
 
-# In[79]:
+# In[14]:
 
 
 #get count of plan type for each state and FIPS
@@ -307,7 +307,7 @@ fips18_type_count['FIPS'] = fips18_type_count['FIPS'].astype(str)
 fips18_type_count['FIPS'] = fips18_type_count['FIPS'].str[:5]
 
 
-# In[80]:
+# In[15]:
 
 
 fips_type_count = fips18_type_count
@@ -315,7 +315,7 @@ fips_type_count['FIPS'] = fips_type_count['FIPS'].str[:5]
 fips18_type_count.head()
 
 
-# In[81]:
+# In[16]:
 
 
 #turn dfs into dicts for jsonification
@@ -555,13 +555,7 @@ for plan in pointer.iterrows():
 ###end of year
 
 
-# In[82]:
-
-
-fips18_type_obs
-
-
-# In[84]:
+# In[18]:
 
 
 app = Flask(__name__)
