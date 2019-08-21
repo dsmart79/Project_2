@@ -63,7 +63,11 @@ h17.columns = ['State','County','Metal','Issuer','Type','FIPS']
 h18.columns = ['State','County','Metal','Issuer','Type','FIPS']
 
 
+<<<<<<< HEAD
+# In[4]:
+=======
 # In[10]:
+>>>>>>> master
 
 
 #create groupbys to operate on
@@ -104,7 +108,11 @@ state18_type_groupby = h18.groupby(['Type','State'])
 fips18_type_groupby = h18.groupby(['Type','FIPS'])
 
 
+<<<<<<< HEAD
+# In[26]:
+=======
 # In[11]:
+>>>>>>> master
 
 
 #get counts for each groupby
@@ -154,7 +162,11 @@ fips18_count.columns = ['FIPS','Count']
 fips18_count['FIPS'] = fips18_count['FIPS'].astype(str)
 
 
+<<<<<<< HEAD
+# In[6]:
+=======
 # In[12]:
+>>>>>>> master
 
 
 #get count for each metal type by state and FIPS
@@ -203,7 +215,11 @@ fips18_metal_count.columns = 'Metal','FIPS','Count'
 fips18_metal_count['FIPS'] = fips18_metal_count['FIPS'].astype(str)
 
 
+<<<<<<< HEAD
+# In[25]:
+=======
 # In[13]:
+>>>>>>> master
 
 
 #get count for each issuer by state and FIPS
@@ -252,7 +268,11 @@ fips18_issuer_count.columns = ['Issuer','FIPS','Count']
 fips18_issuer_count['FIPS'] = fips18_issuer_count['FIPS'].astype(str)
 
 
+<<<<<<< HEAD
+# In[24]:
+=======
 # In[14]:
+>>>>>>> master
 
 
 #get count of plan type for each state and FIPS
@@ -291,7 +311,10 @@ fips17_type_count.columns = (['Count'])
 fips17_type_count = fips17_type_count.reset_index(drop=False)
 fips17_type_count.columns = ['Type','FIPS','Count']
 fips17_type_count['FIPS'] = fips17_type_count['FIPS'].astype(str)
+<<<<<<< HEAD
+=======
 fips17_type_count['FIPS'] = fips17_type_count['FIPS'].str[:5]
+>>>>>>> master
 
 state18_type_count = state18_type_groupby[['FIPS']].count()
 state18_type_count['FIPS'] = state18_type_count['FIPS'].astype(str)
@@ -304,6 +327,11 @@ fips18_type_count.columns = (['Count'])
 fips18_type_count = fips18_type_count.reset_index(drop=False)
 fips18_type_count.columns = ['Type','FIPS','Count']
 fips18_type_count['FIPS'] = fips18_type_count['FIPS'].astype(str)
+<<<<<<< HEAD
+
+
+# In[10]:
+=======
 fips18_type_count['FIPS'] = fips18_type_count['FIPS'].str[:5]
 
 
@@ -316,6 +344,7 @@ fips18_type_count.head()
 
 
 # In[16]:
+>>>>>>> master
 
 
 #turn dfs into dicts for jsonification
@@ -370,6 +399,7 @@ for plan in pointer.iterrows():
     
 fips15_type_obs = []
 pointer = fips15_type_count
+<<<<<<< HEAD
 counter = 0
 for plan in pointer.iterrows():
     fips15_type_obs.append({'FIPS':pointer.iloc[counter,1],'Count':pointer.iloc[counter,-1], 'Type':pointer.iloc[counter,0]})
@@ -378,6 +408,100 @@ for plan in pointer.iterrows():
 ###end of year
 
 #turn dfs into dicts for jsonification
+state16_count_obs = []
+pointer = state16_count
+counter = 0
+for plan in pointer.iterrows():
+    state16_count_obs.append({'State':pointer.iloc[counter,0],'Count':pointer.iloc[counter,-1]})
+    counter = counter +1
+
+fips16_count_obs = []
+pointer = fips16_count
+counter = 0
+for plan in pointer.iterrows():
+    fips16_count_obs.append({'FIPS':pointer.iloc[counter,0],'Count':pointer.iloc[counter,-1]})
+    counter = counter +1
+
+state16_metal_obs = []
+pointer = state16_metal_count
+counter = 0
+for plan in pointer.iterrows():
+    state16_metal_obs.append({'State':pointer.iloc[counter,1],'Metal':pointer.iloc[counter,0],'Count':pointer.iloc[counter,-1]})
+    counter = counter +1
+    
+fips16_metal_obs = []
+pointer = fips16_metal_count
+counter = 0
+for plan in pointer.iterrows():
+    fips16_metal_obs.append({'FIPS':pointer.iloc[counter,1],'Metal':pointer.iloc[counter,0],'Count':pointer.iloc[counter,-1]})
+    counter = counter +1
+
+state16_issuer_obs = []
+pointer = state16_issuer_count
+counter = 0
+for plan in pointer.iterrows():
+    state16_issuer_obs.append({'State':pointer.iloc[counter,1],'Count':pointer.iloc[counter,-1], 'Issuer':pointer.iloc[counter,0]})
+    counter = counter +1
+    
+fips16_issuer_obs = []
+pointer = fips16_issuer_count
+counter = 0
+for plan in pointer.iterrows():
+    fips16_issuer_obs.append({'FIPS':pointer.iloc[counter,1],'Count':pointer.iloc[counter,-1], 'Issuer':pointer.iloc[counter,0]})
+    counter = counter +1
+    
+state16_type_obs = []
+pointer = state16_type_count
+counter = 0
+for plan in pointer.iterrows():
+    state16_type_obs.append({'State':pointer.iloc[counter,1],'Count':pointer.iloc[counter,-1], 'Type':pointer.iloc[counter,0]})
+    counter = counter +1
+    
+fips16_type_obs = []
+pointer = fips16_type_count
+counter = 0
+for plan in pointer.iterrows():
+    fips16_type_obs.append({'FIPS':pointer.iloc[counter,1],'Count':pointer.iloc[counter,-1], 'Type':pointer.iloc[counter,0]})
+=======
+counter = 0
+for plan in pointer.iterrows():
+    fips15_type_obs.append({'FIPS':pointer.iloc[counter,1],'Count':pointer.iloc[counter,-1], 'Type':pointer.iloc[counter,0]})
+>>>>>>> master
+    counter = counter +1
+    
+###end of year
+
+#turn dfs into dicts for jsonification
+<<<<<<< HEAD
+state17_count_obs = []
+pointer = state17_count
+counter = 0
+for plan in pointer.iterrows():
+    state17_count_obs.append({'State':pointer.iloc[counter,0],'Count':pointer.iloc[counter,-1]})
+    counter = counter +1
+
+fips17_count_obs = []
+pointer = fips17_count
+counter = 0
+for plan in pointer.iterrows():
+    fips17_count_obs.append({'FIPS':pointer.iloc[counter,0],'Count':pointer.iloc[counter,-1]})
+    counter = counter +1
+
+state17_metal_obs = []
+pointer = state17_metal_count
+counter = 0
+for plan in pointer.iterrows():
+    state17_metal_obs.append({'State':pointer.iloc[counter,1],'Metal':pointer.iloc[counter,0],'Count':pointer.iloc[counter,-1]})
+    counter = counter +1
+    
+fips17_metal_obs = []
+pointer = fips17_metal_count
+counter = 0
+for plan in pointer.iterrows():
+    fips17_metal_obs.append({'FIPS':pointer.iloc[counter,1],'Metal':pointer.iloc[counter,0],'Count':pointer.iloc[counter,-1]})
+    counter = counter +1
+
+=======
 state16_count_obs = []
 pointer = state16_count
 counter = 0
@@ -465,6 +589,7 @@ for plan in pointer.iterrows():
     fips17_metal_obs.append({'FIPS':pointer.iloc[counter,1],'Metal':pointer.iloc[counter,0],'Count':pointer.iloc[counter,-1]})
     counter = counter +1
 
+>>>>>>> master
 state17_issuer_obs = []
 pointer = state17_issuer_count
 counter = 0
@@ -555,7 +680,11 @@ for plan in pointer.iterrows():
 ###end of year
 
 
+<<<<<<< HEAD
+# In[11]:
+=======
 # In[18]:
+>>>>>>> master
 
 
 app = Flask(__name__)
@@ -613,6 +742,7 @@ def fipsType15():
 @app.route("/state_count16")
 def stateCount16():
     return jsonify(state16_count_obs)
+<<<<<<< HEAD
 
 @app.route("/fips_count16")
 def fipsCount16():
@@ -671,6 +801,66 @@ def fipsIssuer17():
 def stateType17():
     return jsonify(state17_type_obs)
 
+=======
+
+@app.route("/fips_count16")
+def fipsCount16():
+    return jsonify(fips16_count_obs)
+
+@app.route("/state_metal16")
+def stateMetal16():
+    return jsonify(state16_metal_obs)
+
+@app.route("/fips_metal16")
+def fipsMetal16():
+    return jsonify(fips16_metal_obs)
+
+@app.route("/state_issuer16")
+def stateIssuer16():
+    return jsonify(state16_issuer_obs)
+
+@app.route("/fips_issuer16")
+def fipsIssuer16():
+    return jsonify(fips16_issuer_obs)
+
+@app.route("/state_type16")
+def stateType16():
+    return jsonify(state16_type_obs)
+
+@app.route("/fips_type16")
+def fipsType16():
+    return jsonify(fips16_type_obs)
+##end of year
+
+@app.route("/state_count17")
+def stateCount17():
+    return jsonify(state17_count_obs)
+
+@app.route("/fips_count17")
+def fipsCount17():
+    return jsonify(fips17_count_obs)
+
+@app.route("/state_metal17")
+def stateMetal17():
+    return jsonify(state17_metal_obs)
+
+@app.route("/fips_metal17")
+def fipsMetal17():
+    return jsonify(fips17_metal_obs)
+
+@app.route("/state_issuer17")
+def stateIssuer17():
+    return jsonify(state17_issuer_obs)
+
+@app.route("/fips_issuer17")
+def fipsIssuer17():
+    return jsonify(fips17_issuer_obs)
+
+@app.route("/state_type17")
+def stateType17():
+    return jsonify(state17_type_obs)
+
+>>>>>>> master
 @app.route("/fips_type17")
 def fipsType17():
     return jsonify(fips17_type_obs)
@@ -707,10 +897,19 @@ def stateType18():
 @app.route("/fips_type18")
 def fipsType18():
     return jsonify(fips18_type_obs)
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 ##end of year
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
