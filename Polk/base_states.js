@@ -1,6 +1,6 @@
 //creating empty layergroup for later adding to map
 //https://www.tutorialspoint.com/leafletjs/leafletjs_layers_group.htm
-import statesCountyData from "./states_county.js"
+
 import API_KEY from "./config.js"
 
 var statesCountyLayer = new L.layerGroup();
