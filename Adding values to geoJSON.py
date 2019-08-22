@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[45]:
 
 
 #dependencies
@@ -9,7 +9,7 @@ import pandas as pd
 import requests
 
 
-# In[2]:
+# In[46]:
 
 
 #read in geoJSON and state codes
@@ -17,7 +17,7 @@ states = pd.read_json('./static/geoJson/us_states.json')
 state_codes = pd.read_csv('./CSVs/state_codes.csv')
 
 
-# In[3]:
+# In[47]:
 
 
 #Drop territories
@@ -35,7 +35,7 @@ for state in state_list.iterrows():
 states['features'][51]['properties']['state_code'] = 'PR'
 
 
-# In[ ]:
+# In[48]:
 
 
 #JSON requests to api endpoint to get attributes to write to geoJSON
@@ -60,7 +60,7 @@ state_issuer18 = requests.get('http://localhost:5000/state_issuer18')
 state_type18 = requests.get('http://localhost:5000/state_type18')
 
 
-# In[ ]:
+# In[49]:
 
 
 #read the JSONs
@@ -85,7 +85,7 @@ state_issuer18 = state_issuer18.json()
 state_type18 = state_type18.json()
 
 
-# In[ ]:
+# In[50]:
 
 
 #turn Count back into an int
@@ -158,7 +158,7 @@ for dicts in state_issuer18:
 #next year
 
 
-# In[ ]:
+# In[51]:
 
 
 #lookup the states that we have data for count data to the geoJSON
@@ -216,7 +216,7 @@ while counter1 < len(state_count18):
         counter2 = counter2 +1
 
 
-# In[ ]:
+# In[52]:
 
 
 #cast Count to int and break metal up into each type
@@ -262,7 +262,7 @@ gold18=year_data.loc[year_data['Metal'] == 'Gold'].reset_index(drop=True)
 platinum18=year_data.loc[year_data['Metal'] == 'Platinum'].reset_index(drop=True)
 
 
-# In[ ]:
+# In[53]:
 
 
 #write metal data to geoJSON
@@ -602,7 +602,7 @@ while counter1 < len(pointer):
 #next year
 
 
-# In[ ]:
+# In[54]:
 
 
 #add issuer count to each state object for better naming in next step
@@ -613,7 +613,7 @@ for state in states.iterrows():
     state[1]['features']['properties']['issuer18_count'] = 0
 
 
-# In[ ]:
+# In[55]:
 
 
 #write out issuers and the number of plans by each issuer ot the geoJSON
@@ -714,7 +714,7 @@ while counter1 < len(pointer):
         
 
 
-# In[ ]:
+# In[56]:
 
 
 #split out each plan type
@@ -747,7 +747,7 @@ POS18 = type18_df.loc[type18_df['Type'] == 'POS'].reset_index(drop=True)
 Indemnity18 = type18_df.loc[type18_df['Type'] == 'Indemnity'].reset_index(drop=True)
 
 
-# In[ ]:
+# In[57]:
 
 
 #write out each plan type
@@ -1087,10 +1087,10 @@ while counter1 < len(pointer):
 #next year
 
 
-# In[ ]:
+# In[58]:
 
 
-states.to_json('./static/geoJson/modifiedStates.json')
+states.to_json('./static/geoJson/modifiedStates.json',orient='records')
 
 
 # In[ ]:
