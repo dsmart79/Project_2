@@ -56,7 +56,8 @@ function style15(feature) {
     opacity: 1,
     color: 'black',
     dashArray: '3',
-    fillOpacity: 0.3
+    fillOpacity: 1,
+    stroke: false
   };
 }
 function style16(feature) {
@@ -66,7 +67,8 @@ function style16(feature) {
     opacity: 1,
     color: 'black',
     dashArray: '3',
-    fillOpacity: 0.3
+    fillOpacity: 1,
+    stroke: false
   };
 }
 
@@ -77,7 +79,8 @@ function style17(feature) {
     opacity: 1,
     color: 'black',
     dashArray: '3',
-    fillOpacity: 0.3
+    fillOpacity: 1,
+    stroke: false
   };
 }
 
@@ -88,7 +91,8 @@ function style18(feature) {
     opacity: 1,
     color: 'black',
     dashArray: '3',
-    fillOpacity: 0.3
+    fillOpacity: 1,
+    stroke: false
   };
 }
 //add heighlight feature with event lister mouseover
