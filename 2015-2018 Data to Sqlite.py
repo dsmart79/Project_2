@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[69]:
+# In[1]:
+# In[87]:
 
 
 # Imports
 import pandas as pd
+import os
+import sqlite3
+from sqlite3 import Error
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, inspect
 from sqlalchemy.ext.declarative import declarative_base
@@ -15,7 +19,8 @@ import sqlalchemy as db
 
 # ## CSV to DataFrame
 
-# In[70]:
+# In[2]:
+# In[88]:
 
 
 # import CSVs 
@@ -24,10 +29,13 @@ health16_df = pd.read_csv('./CSVs/Health_Ins_2016.csv')
 health17_df = pd.read_csv('./CSVs/Health_Ins_2017.csv')
 health18_df = pd.read_csv('./CSVs/Health_Ins_2018.csv')
 iowa_counties = pd.read_csv('./CSVs/IA_counties.csv')
+
+
+# In[3]:
 ky_counties = pd.read_csv('./CSVs/KY_FIPS.csv')
 
 
-# In[71]:
+# In[89]:
 
 
 # rename columns
@@ -35,7 +43,8 @@ health15_df = health15_df[['State Code','County Name','Metal Level','Issuer Name
 health16_df = health16_df[['State Code','County Name','Metal Level','Issuer Name','Plan Type']]
 
 
-# In[72]:
+# In[4]:
+# In[90]:
 
 
 #lowercase county names for lookups
@@ -45,7 +54,8 @@ health17_df['County Name'] = health17_df['County Name'].str.lower()
 health18_df['County Name'] = health18_df['County Name'].str.lower()
 
 
-# In[73]:
+# In[5]:
+# In[91]:
 
 
 ky_counties['County'] = ky_counties['County'].str.lower()
@@ -56,7 +66,7 @@ ky_counties = ky_counties[['Lookup','FIPS']]
 ky_counties.columns = ['Lookup','fips']
 
 
-# In[74]:
+# In[92]:
 
 
 #combine state codes and county names for lookups
@@ -74,14 +84,16 @@ health18_df['Lookup'] = health18_df['Lookup'].str.replace('-','')
 health18_df['Lookup'] = health18_df['Lookup'].str.replace(' ','')
 
 
-# In[75]:
+# In[6]:
+# In[93]:
 
 
 lookup17 = health17_df[['Lookup','FIPS County Code']]
 lookup17.columns = ['Lookup', 'fips']
 
 
-# In[76]:
+# In[7]:
+# In[94]:
 
 
 #build lookup table from 2017 fips info
@@ -98,7 +110,8 @@ while counter < len(unique_lookup):
 lookup_table = pd.DataFrame(lookup_table)
 
 
-# In[77]:
+# In[8]:
+# In[95]:
 
 
 #add missing counties to lookup table
@@ -110,10 +123,13 @@ lookup_table = lookup_table.append({'Lookup':'IAcerrogordo','fips':'19033'},igno
 lookup_table = lookup_table.append({'Lookup':'IAcedar','fips':'19031'},ignore_index=True)
 lookup_table = lookup_table.append({'Lookup':'IAcass','fips':'19029'},ignore_index=True)
 lookup_table = lookup_table.append(iowa_counties)
+
+
+# In[9]:
 lookup_table = lookup_table.append(ky_counties)
 
 
-# In[78]:
+# In[96]:
 
 
 #merge in lookup table to 15 and 16 data to add fips column
@@ -121,13 +137,12 @@ l_15 = health15_df.merge(lookup_table,on='Lookup',how='left')
 l_16 = health16_df.merge(lookup_table,on='Lookup',how='left')
 
 
-# In[80]:
+# In[10]:
+l_17 = health17_df.merge(lookup_table,on='Lookup',how='left')
+l_18 = health18_df.merge(lookup_table,on='Lookup',how='left')
 
 
-health18_df.head()
-
-
-# In[81]:
+# In[97]:
 
 
 #remove lookup column and standardize order and names
@@ -141,7 +156,14 @@ health18_df = health18_df[['State Code','County Name','Metal Level','Issuer Name
 health18_df.columns = ['State Code','County Name','Metal Level','Issuer Name','Plan Type','Fips']
 
 
-# In[83]:
+# In[11]:
+health17_df = l_17[['State Code','County Name','Metal Level','Issuer Name','Plan Type','fips']]
+health17_df.columns = ['State Code','County Name','Metal Level','Issuer Name','Plan Type','Fips']
+health18_df = l_18[['State Code','County Name','Metal Level','Issuer Name','Plan Type','fips']]
+health18_df.columns = ['State Code','County Name','Metal Level','Issuer Name','Plan Type','Fips']
+
+
+# In[98]:
 
 
 #Write dfs out as objects to add to db
@@ -174,7 +196,8 @@ for record in pointer.iterrows():
     counter = counter + 1
 
 
-# In[89]:
+# In[12]:
+# In[99]:
 
 
 #Create sqlite DB
@@ -214,15 +237,16 @@ h18 = db.Table('h18', metadata,
                db.Column('State Code', db.String(255)),
                db.Column('County Name', db.String(255)),
                db.Column('Metal Level', db.String(255)),
-               db.Column('Issuer Name',db.String(255)),
                db.Column('Plan Type',db.String(255)),
+               db.Column('Issuer Name',db.String(255)),
                db.Column('FIPS',db.Integer())
               )
 
 metadata.create_all(engine)
 
 
-# In[90]:
+# In[13]:
+# In[100]:
 
 
 #make db connections and write in objects for each year
