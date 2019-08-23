@@ -1,48 +1,66 @@
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+{
+  "type": {
+    "0": "FeatureCollection",
+    "1": "FeatureCollection",
+    "2": "FeatureCollection",
+    "3": "FeatureCollection",
+    "4": "FeatureCollection",
+    "5": "FeatureCollection",
+    "6": "FeatureCollection",
+    "7": "FeatureCollection",
+    "8": "FeatureCollection",
+    "9": "FeatureCollection",
+    "10": "FeatureCollection",
+    "11": "FeatureCollection",
+    "12": "FeatureCollection",
+    "13": "FeatureCollection",
+    "14": "FeatureCollection",
+    "15": "FeatureCollection",
+    "16": "FeatureCollection",
+    "17": "FeatureCollection",
+    "18": "FeatureCollection",
+    "19": "FeatureCollection",
+    "20": "FeatureCollection",
+    "21": "FeatureCollection",
+    "22": "FeatureCollection",
+    "23": "FeatureCollection",
+    "24": "FeatureCollection",
+    "25": "FeatureCollection",
+    "26": "FeatureCollection",
+    "27": "FeatureCollection",
+    "28": "FeatureCollection",
+    "29": "FeatureCollection",
+    "30": "FeatureCollection",
+    "31": "FeatureCollection",
+    "32": "FeatureCollection",
+    "33": "FeatureCollection",
+    "34": "FeatureCollection",
+    "35": "FeatureCollection",
+    "36": "FeatureCollection",
+    "37": "FeatureCollection",
+    "38": "FeatureCollection",
+    "39": "FeatureCollection",
+    "40": "FeatureCollection",
+    "41": "FeatureCollection",
+    "42": "FeatureCollection",
+    "43": "FeatureCollection",
+    "44": "FeatureCollection",
+    "45": "FeatureCollection",
+    "46": "FeatureCollection",
+    "47": "FeatureCollection",
+    "48": "FeatureCollection",
+    "49": "FeatureCollection",
+    "50": "FeatureCollection",
+    "51": "FeatureCollection"
+  },
+  "features": {
+    "0": {
       "type": "Feature",
       "id": "01",
       "properties": {
         "name": "Alabama",
         "density": 94.65,
-        "state_code": "AL",
-        "state_count15": 402,
-        "state_count16": 402,
-        "state_count17": 402,
-        "state_count18": 402,
-        "bronze_state15": 134,
-        "silver_state15": 67,
-        "gold_state15": 134,
-        "platinum_state15": 67,
-        "bronze_state16": 134,
-        "silver_state16": 67,
-        "gold_state16": 134,
-        "platinum_state16": 67,
-        "bronze_state17": 134,
-        "silver_state17": 67,
-        "gold_state17": 134,
-        "platinum_state17": 67,
-        "bronze_state18": 134,
-        "silver_state18": 67,
-        "gold_state18": 134,
-        "platinum_state18": 67,
-        "issuer15_count": 1,
-        "issuer16_count": 1,
-        "issuer17_count": 1,
-        "issuer18_count": 1,
-        "issuer15_0": 402,
-        "issuer15_0_name": "Blue Cross and Blue Shield of Alabama",
-        "issuer16_0": 402,
-        "issuer16_0_name": "Blue Cross and Blue Shield of Alabama",
-        "issuer17_0": 402,
-        "issuer17_0_name": "Blue Cross and Blue Shield of Alabama",
-        "issuer18_0": 402,
-        "issuer18_0_name": "PPO",
-        "PPO15": 402,
-        "PPO16": 402,
-        "PPO17": 402
+        "state_code": "AL"
       },
       "geometry": {
         "type": "Polygon",
@@ -183,56 +201,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "1": {
       "type": "Feature",
       "id": "02",
       "properties": {
         "name": "Alaska",
         "density": 1.264,
         "state_code": "AK",
-        "state_count15": 957,
-        "state_count16": 957,
-        "state_count17": 928,
-        "state_count18": 784,
-        "bronze_state15": 203,
-        "silver_state15": 551,
-        "gold_state15": 203,
-        "bronze_state16": 203,
-        "silver_state16": 551,
-        "gold_state16": 203,
-        "bronze_state17": 174,
-        "silver_state17": 551,
-        "gold_state17": 203,
-        "bronze_state18": 168,
-        "expanded_bronze_18": 112,
-        "silver_state18": 336,
-        "gold_state18": 168,
-        "issuer15_count": 2,
-        "issuer16_count": 2,
-        "issuer17_count": 2,
-        "issuer18_count": 1,
-        "issuer15_0": 870,
-        "issuer15_0_name": "Moda Health Plan, Inc.",
-        "issuer15_1": 87,
-        "issuer15_1_name": "Premera Blue Cross Blue Shield of Alaska",
-        "issuer16_0": 870,
-        "issuer16_0_name": "Moda Health Plan, Inc.",
-        "issuer16_1": 87,
-        "issuer16_1_name": "Premera Blue Cross Blue Shield of Alaska",
-        "issuer17_0": 870,
-        "issuer17_0_name": "Moda Health Plan, Inc.",
-        "issuer17_1": 58,
-        "issuer17_1_name": "Premera Blue Cross Blue Shield of Alaska",
-        "issuer18_0": 784,
-        "issuer18_0_name": "PPO",
-        "PPO15": 957,
-        "PPO16": 957,
-        "PPO17": 928
+        "state_count15": 402
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -4691,59 +4668,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "2": {
       "type": "Feature",
       "id": "04",
       "properties": {
         "name": "Arizona",
         "density": 57.05,
         "state_code": "AZ",
-        "state_count15": 214,
-        "state_count16": 214,
-        "state_count17": 45,
-        "bronze_state15": 30,
-        "silver_state15": 92,
-        "gold_state15": 77,
-        "platinum_state15": 15,
-        "bronze_state16": 30,
-        "silver_state16": 92,
-        "gold_state16": 77,
-        "platinum_state16": 15,
-        "bronze_state17": 15,
-        "silver_state17": 15,
-        "gold_state17": 15,
-        "issuer15_count": 4,
-        "issuer16_count": 4,
-        "issuer17_count": 1,
-        "issuer18_count": 0,
-        "issuer15_0": 30,
-        "issuer15_0_name": "All Savers Insurance Company",
-        "issuer15_1": 45,
-        "issuer15_1_name": "Blue Cross and Blue Shield of Arizona, Inc.",
-        "issuer15_2": 105,
-        "issuer15_2_name": "Health Net Life Insurance Company",
-        "issuer15_3": 34,
-        "issuer15_3_name": "Health Net of Arizona, Inc.",
-        "issuer16_0": 30,
-        "issuer16_0_name": "All Savers Insurance Company",
-        "issuer16_1": 45,
-        "issuer16_1_name": "Blue Cross and Blue Shield of Arizona, Inc.",
-        "issuer16_2": 105,
-        "issuer16_2_name": "Health Net Life Insurance Company",
-        "issuer16_3": 34,
-        "issuer16_3_name": "Health Net of Arizona, Inc.",
-        "issuer17_0": 45,
-        "issuer17_0_name": "Blue Cross and Blue Shield of Arizona, Inc.",
-        "PPO15": 180,
-        "HMO15": 34,
-        "PPO16": 180,
-        "HMO16": 34,
-        "PPO17": 45
+        "state_count15": 957
       },
       "geometry": {
         "type": "Polygon",
@@ -4880,22 +4813,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "3": {
       "type": "Feature",
       "id": "05",
       "properties": {
         "name": "Arkansas",
         "density": 56.43,
         "state_code": "AR",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_count15": 214
       },
       "geometry": {
         "type": "Polygon",
@@ -5052,22 +4978,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "4": {
       "type": "Feature",
       "id": "06",
       "properties": {
         "name": "California",
         "density": 241.7,
-        "state_code": "CA",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_code": "CA"
       },
       "geometry": {
         "type": "Polygon",
@@ -5448,22 +5366,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "5": {
       "type": "Feature",
       "id": "08",
       "properties": {
         "name": "Colorado",
         "density": 49.33,
-        "state_code": "CO",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_code": "CO"
       },
       "geometry": {
         "type": "Polygon",
@@ -5536,22 +5446,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "6": {
       "type": "Feature",
       "id": "09",
       "properties": {
         "name": "Connecticut",
         "density": 739.1,
-        "state_code": "CT",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_code": "CT"
       },
       "geometry": {
         "type": "Polygon",
@@ -5624,57 +5526,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "7": {
       "type": "Feature",
       "id": "10",
       "properties": {
         "name": "Delaware",
         "density": 464.3,
-        "state_code": "DE",
-        "state_count15": 45,
-        "state_count16": 45,
-        "state_count17": 33,
-        "bronze_state15": 15,
-        "silver_state15": 15,
-        "gold_state15": 15,
-        "bronze_state16": 15,
-        "silver_state16": 15,
-        "gold_state16": 15,
-        "bronze_state17": 9,
-        "silver_state17": 12,
-        "gold_state17": 12,
-        "issuer15_count": 2,
-        "issuer16_count": 2,
-        "issuer17_count": 3,
-        "issuer18_count": 0,
-        "issuer15_0": 9,
-        "issuer15_0_name": "Aetna Health Inc. (a PA corp.)",
-        "issuer15_1": 36,
-        "issuer15_1_name": "Highmark BCBSD Inc.",
-        "issuer16_0": 9,
-        "issuer16_0_name": "Aetna Health Inc. (a PA corp.)",
-        "issuer16_1": 36,
-        "issuer16_1_name": "Highmark BCBSD Inc.",
-        "issuer17_0": 9,
-        "issuer17_0_name": "Aetna Health Inc. (a PA corp.)",
-        "issuer17_1": 9,
-        "issuer17_1_name": "Aetna Life Insurance Company",
-        "issuer17_2": 15,
-        "issuer17_2_name": "Highmark BCBSD Inc.",
-        "EPO15": 30,
-        "PPO15": 6,
-        "POS15": 9,
-        "EPO16": 30,
-        "PPO16": 6,
-        "POS16": 9,
-        "EPO17": 12,
-        "PPO17": 12,
-        "POS17": 9
+        "state_code": "DE"
       },
       "geometry": {
         "type": "Polygon",
@@ -5735,22 +5594,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "8": {
       "type": "Feature",
       "id": "11",
       "properties": {
         "name": "District of Columbia",
         "density": 10065,
         "state_code": "DC",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_count15": 45
       },
       "geometry": {
         "type": "Polygon",
@@ -5779,99 +5631,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "9": {
       "type": "Feature",
       "id": "12",
       "properties": {
         "name": "Florida",
         "density": 353.4,
-        "state_code": "FL",
-        "state_count15": 902,
-        "state_count16": 902,
-        "state_count17": 536,
-        "state_count18": 146,
-        "bronze_state15": 88,
-        "silver_state15": 339,
-        "gold_state15": 363,
-        "platinum_state15": 112,
-        "bronze_state16": 88,
-        "silver_state16": 339,
-        "gold_state16": 363,
-        "platinum_state16": 112,
-        "bronze_state17": 48,
-        "silver_state17": 218,
-        "gold_state17": 218,
-        "platinum_state17": 52,
-        "bronze_state18": 20,
-        "expanded_bronze_18": 4,
-        "silver_state18": 60,
-        "gold_state18": 46,
-        "platinum_state18": 16,
-        "issuer15_count": 7,
-        "issuer16_count": 7,
-        "issuer17_count": 6,
-        "issuer18_count": 2,
-        "issuer15_0": 134,
-        "issuer15_0_name": "Blue Cross and Blue Shield of Florida",
-        "issuer15_1": 192,
-        "issuer15_1_name": "Florida Health Care Plan, Inc.",
-        "issuer15_2": 288,
-        "issuer15_2_name": "Health First Health Plans, Inc.",
-        "issuer15_3": 12,
-        "issuer15_3_name": "Health First Insurance, Inc.",
-        "issuer15_4": 70,
-        "issuer15_4_name": "Health Options, Inc.",
-        "issuer15_5": 72,
-        "issuer15_5_name": "Humana Medical Plan, Inc.",
-        "issuer15_6": 134,
-        "issuer15_6_name": "UnitedHealthcare of Florida, Inc.",
-        "issuer16_0": 134,
-        "issuer16_0_name": "Blue Cross and Blue Shield of Florida",
-        "issuer16_1": 192,
-        "issuer16_1_name": "Florida Health Care Plan, Inc.",
-        "issuer16_2": 288,
-        "issuer16_2_name": "Health First Health Plans, Inc.",
-        "issuer16_3": 12,
-        "issuer16_3_name": "Health First Insurance, Inc.",
-        "issuer16_4": 70,
-        "issuer16_4_name": "Health Options, Inc.",
-        "issuer16_5": 72,
-        "issuer16_5_name": "Humana Medical Plan, Inc.",
-        "issuer16_6": 134,
-        "issuer16_6_name": "UnitedHealthcare of Florida, Inc.",
-        "issuer17_0": 134,
-        "issuer17_0_name": "Blue Cross and Blue Shield of Florida",
-        "issuer17_1": 72,
-        "issuer17_1_name": "Florida Health Care Plan, Inc.",
-        "issuer17_2": 156,
-        "issuer17_2_name": "Health First Commercial Plans, Inc.",
-        "issuer17_3": 12,
-        "issuer17_3_name": "Health First Insurance, Inc.",
-        "issuer17_4": 90,
-        "issuer17_4_name": "Health Options, Inc.",
-        "issuer17_5": 72,
-        "issuer17_5_name": "Humana Medical Plan, Inc.",
-        "issuer18_0": 88,
-        "issuer18_0_name": "HMO",
-        "issuer18_1": 58,
-        "issuer18_1_name": "POS",
-        "EPO15": 134,
-        "PPO15": 12,
-        "HMO15": 524,
-        "POS15": 232,
-        "EPO16": 134,
-        "PPO16": 12,
-        "HMO16": 524,
-        "POS16": 232,
-        "EPO17": 134,
-        "PPO17": 12,
-        "HMO17": 310,
-        "POS17": 80
+        "state_code": "FL"
       },
       "geometry": {
         "type": "Polygon",
@@ -6192,75 +5959,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "10": {
       "type": "Feature",
       "id": "13",
       "properties": {
         "name": "Georgia",
         "density": 169.5,
         "state_code": "GA",
-        "state_count15": 2165,
-        "state_count16": 2165,
-        "state_count17": 2031,
-        "state_count18": 480,
-        "bronze_state15": 450,
-        "silver_state15": 936,
-        "gold_state15": 779,
-        "bronze_state16": 450,
-        "silver_state16": 936,
-        "gold_state16": 779,
-        "bronze_state17": 418,
-        "silver_state17": 773,
-        "gold_state17": 744,
-        "platinum_state17": 96,
-        "bronze_state18": 64,
-        "expanded_bronze_18": 64,
-        "silver_state18": 192,
-        "gold_state18": 160,
-        "issuer15_count": 4,
-        "issuer16_count": 4,
-        "issuer17_count": 4,
-        "issuer18_count": 1,
-        "issuer15_0": 704,
-        "issuer15_0_name": "Alliant Health Plans",
-        "issuer15_1": 477,
-        "issuer15_1_name": "Blue Cross Blue Shield Healthcare Plan of Georgia, Inc.",
-        "issuer15_2": 600,
-        "issuer15_2_name": "Humana Employers Health Plan of Georgia, Inc.",
-        "issuer15_3": 384,
-        "issuer15_3_name": "Kaiser Foundation Health Plan of Georgia",
-        "issuer16_0": 704,
-        "issuer16_0_name": "Alliant Health Plans",
-        "issuer16_1": 477,
-        "issuer16_1_name": "Blue Cross Blue Shield Healthcare Plan of Georgia, Inc.",
-        "issuer16_2": 600,
-        "issuer16_2_name": "Humana Employers Health Plan of Georgia, Inc.",
-        "issuer16_3": 384,
-        "issuer16_3_name": "Kaiser Foundation Health Plan of Georgia",
-        "issuer17_0": 544,
-        "issuer17_0_name": "Alliant Health Plans",
-        "issuer17_1": 477,
-        "issuer17_1_name": "Blue Cross Blue Shield Healthcare Plan of Georgia, Inc.",
-        "issuer17_2": 594,
-        "issuer17_2_name": "Humana Employers Health Plan of Georgia, Inc.",
-        "issuer17_3": 416,
-        "issuer17_3_name": "Kaiser Foundation Health Plan of Georgia",
-        "issuer18_0": 480,
-        "issuer18_0_name": "HMO",
-        "PPO15": 704,
-        "HMO15": 390,
-        "POS15": 1071,
-        "PPO16": 704,
-        "HMO16": 390,
-        "POS16": 1071,
-        "PPO17": 544,
-        "HMO17": 416,
-        "POS17": 1071
+        "state_count15": 902
       },
       "geometry": {
         "type": "Polygon",
@@ -6473,22 +6180,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "11": {
       "type": "Feature",
       "id": "15",
       "properties": {
         "name": "Hawaii",
         "density": 214.1,
         "state_code": "HI",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_count15": 2165
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -6711,22 +6411,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "12": {
       "type": "Feature",
       "id": "16",
       "properties": {
         "name": "Idaho",
         "density": 19.15,
-        "state_code": "ID",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_code": "ID"
       },
       "geometry": {
         "type": "Polygon",
@@ -6999,66 +6691,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "13": {
       "type": "Feature",
       "id": "17",
       "properties": {
         "name": "Illinois",
         "density": 231.5,
-        "state_code": "IL",
-        "state_count15": 2904,
-        "state_count16": 2904,
-        "state_count17": 2904,
-        "state_count18": 2100,
-        "bronze_state15": 929,
-        "silver_state15": 1143,
-        "gold_state15": 832,
-        "bronze_state16": 929,
-        "silver_state16": 1143,
-        "gold_state16": 832,
-        "bronze_state17": 929,
-        "silver_state17": 1143,
-        "gold_state17": 832,
-        "bronze_state18": 204,
-        "silver_state18": 846,
-        "gold_state18": 943,
-        "platinum_state18": 107,
-        "issuer15_count": 2,
-        "issuer16_count": 2,
-        "issuer17_count": 2,
-        "issuer18_count": 3,
-        "issuer15_0": 1506,
-        "issuer15_0_name": "Blue Cross Blue Shield of Illinois",
-        "issuer15_1": 1398,
-        "issuer15_1_name": "Health Alliance Medical Plans, Inc.",
-        "issuer16_0": 1506,
-        "issuer16_0_name": "Blue Cross Blue Shield of Illinois",
-        "issuer16_1": 1398,
-        "issuer16_1_name": "Health Alliance Medical Plans, Inc.",
-        "issuer17_0": 1506,
-        "issuer17_0_name": "Blue Cross Blue Shield of Illinois",
-        "issuer17_1": 1398,
-        "issuer17_1_name": "Health Alliance Medical Plans, Inc.",
-        "issuer18_0": 642,
-        "issuer18_0_name": "HMO",
-        "issuer18_1": 1177,
-        "issuer18_1_name": "POS",
-        "issuer18_2": 281,
-        "issuer18_2_name": "PPO",
-        "PPO15": 1719,
-        "HMO15": 476,
-        "POS15": 709,
-        "PPO16": 1719,
-        "HMO16": 476,
-        "POS16": 709,
-        "PPO17": 1719,
-        "HMO17": 476,
-        "POS17": 709
+        "state_code": "IL"
       },
       "geometry": {
         "type": "Polygon",
@@ -7335,46 +6975,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "14": {
       "type": "Feature",
       "id": "18",
       "properties": {
         "name": "Indiana",
         "density": 181.7,
         "state_code": "IN",
-        "state_count15": 460,
-        "state_count16": 460,
-        "state_count17": 460,
-        "bronze_state15": 184,
-        "silver_state15": 184,
-        "gold_state15": 92,
-        "bronze_state16": 184,
-        "silver_state16": 184,
-        "gold_state16": 92,
-        "bronze_state17": 184,
-        "silver_state17": 184,
-        "gold_state17": 92,
-        "issuer15_count": 1,
-        "issuer16_count": 1,
-        "issuer17_count": 1,
-        "issuer18_count": 0,
-        "issuer15_0": 460,
-        "issuer15_0_name": "Anthem Ins Companies Inc(Anthem BCBS)",
-        "issuer16_0": 460,
-        "issuer16_0_name": "Anthem Ins Companies Inc(Anthem BCBS)",
-        "issuer17_0": 460,
-        "issuer17_0_name": "Anthem Ins Companies Inc(Anthem BCBS)",
-        "HMO15": 368,
-        "POS15": 92,
-        "HMO16": 368,
-        "POS16": 92,
-        "HMO17": 368,
-        "POS17": 92
+        "state_count15": 2904
       },
       "geometry": {
         "type": "Polygon",
@@ -7567,78 +7176,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "15": {
       "type": "Feature",
       "id": "19",
       "properties": {
         "name": "Iowa",
         "density": 54.81,
         "state_code": "IA",
-        "state_count15": 627,
-        "state_count16": 627,
-        "state_count17": 134,
-        "state_count18": 80,
-        "bronze_state15": 63,
-        "silver_state15": 379,
-        "gold_state15": 156,
-        "platinum_state15": 29,
-        "bronze_state16": 63,
-        "silver_state16": 379,
-        "gold_state16": 156,
-        "platinum_state16": 29,
-        "bronze_state17": 45,
-        "silver_state17": 47,
-        "gold_state17": 22,
-        "platinum_state17": 20,
-        "bronze_state18": 10,
-        "expanded_bronze_18": 10,
-        "silver_state18": 40,
-        "gold_state18": 10,
-        "platinum_state18": 10,
-        "issuer15_count": 4,
-        "issuer16_count": 4,
-        "issuer17_count": 4,
-        "issuer18_count": 1,
-        "issuer15_0": 81,
-        "issuer15_0_name": "Avera Health Plans, Inc.",
-        "issuer15_1": 70,
-        "issuer15_1_name": "Gundersen Health Plan, Inc.",
-        "issuer15_2": 80,
-        "issuer15_2_name": "Sanford Health Plan",
-        "issuer15_3": 396,
-        "issuer15_3_name": "UnitedHealthcare Insurance Company",
-        "issuer16_0": 81,
-        "issuer16_0_name": "Avera Health Plans, Inc.",
-        "issuer16_1": 70,
-        "issuer16_1_name": "Gundersen Health Plan, Inc.",
-        "issuer16_2": 80,
-        "issuer16_2_name": "Sanford Health Plan",
-        "issuer16_3": 396,
-        "issuer16_3_name": "UnitedHealthcare Insurance Company",
-        "issuer17_0": 70,
-        "issuer17_0_name": "Gundersen Health Plan, Inc.",
-        "issuer17_1": 60,
-        "issuer17_1_name": "Sanford Health Plan",
-        "issuer17_2": 2,
-        "issuer17_2_name": "Wellmark Synergy Health, Inc.",
-        "issuer17_3": 2,
-        "issuer17_3_name": "Wellmark Value Health Plan, Inc.",
-        "issuer18_0": 80,
-        "issuer18_0_name": "HMO",
-        "EPO15": 99,
-        "PPO15": 81,
-        "HMO15": 150,
-        "POS15": 297,
-        "EPO16": 99,
-        "PPO16": 81,
-        "HMO16": 150,
-        "POS16": 297,
-        "HMO17": 134
+        "state_count15": 460
       },
       "geometry": {
         "type": "Polygon",
@@ -7847,55 +7393,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "16": {
       "type": "Feature",
       "id": "20",
       "properties": {
         "name": "Kansas",
         "density": 35.09,
         "state_code": "KS",
-        "state_count15": 1034,
-        "state_count16": 1034,
-        "state_count17": 210,
-        "bronze_state15": 412,
-        "silver_state15": 414,
-        "gold_state15": 208,
-        "bronze_state16": 412,
-        "silver_state16": 414,
-        "gold_state16": 208,
-        "silver_state17": 105,
-        "gold_state17": 105,
-        "issuer15_count": 3,
-        "issuer16_count": 3,
-        "issuer17_count": 2,
-        "issuer18_count": 0,
-        "issuer15_0": 4,
-        "issuer15_0_name": "Blue Cross and Blue Shield of Kansas City",
-        "issuer15_1": 515,
-        "issuer15_1_name": "Blue Cross and Blue Shield of Kansas, Inc.",
-        "issuer15_2": 515,
-        "issuer15_2_name": "BlueCross BlueShield Kansas Solutions, Inc.",
-        "issuer16_0": 4,
-        "issuer16_0_name": "Blue Cross and Blue Shield of Kansas City",
-        "issuer16_1": 515,
-        "issuer16_1_name": "Blue Cross and Blue Shield of Kansas, Inc.",
-        "issuer16_2": 515,
-        "issuer16_2_name": "BlueCross BlueShield Kansas Solutions, Inc.",
-        "issuer17_0": 4,
-        "issuer17_0_name": "Blue Cross and Blue Shield of Kansas City",
-        "issuer17_1": 206,
-        "issuer17_1_name": "BlueCross BlueShield Kansas Solutions, Inc.",
-        "PPO15": 519,
-        "HMO15": 515,
-        "PPO16": 519,
-        "HMO16": 515,
-        "PPO17": 4,
-        "HMO17": 206
+        "state_count15": 627
       },
       "geometry": {
         "type": "Polygon",
@@ -7956,30 +7462,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "17": {
       "type": "Feature",
       "id": "21",
       "properties": {
         "name": "Kentucky",
         "density": 110,
         "state_code": "KY",
-        "state_count17": 942,
-        "bronze_state17": 314,
-        "silver_state17": 314,
-        "gold_state17": 314,
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 1,
-        "issuer18_count": 0,
-        "issuer17_0": 942,
-        "issuer17_0_name": "Anthem Health Plans of KY(Anthem BCBS)",
-        "PPO17": 720,
-        "HMO17": 222
+        "state_count15": 1034
       },
       "geometry": {
         "type": "Polygon",
@@ -8288,68 +7779,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "18": {
       "type": "Feature",
       "id": "22",
       "properties": {
         "name": "Louisiana",
         "density": 105,
-        "state_code": "LA",
-        "state_count15": 576,
-        "state_count16": 576,
-        "state_count17": 576,
-        "state_count18": 320,
-        "bronze_state15": 128,
-        "silver_state15": 192,
-        "gold_state15": 192,
-        "platinum_state15": 64,
-        "bronze_state16": 128,
-        "silver_state16": 192,
-        "gold_state16": 192,
-        "platinum_state16": 64,
-        "bronze_state17": 128,
-        "silver_state17": 192,
-        "gold_state17": 192,
-        "platinum_state17": 64,
-        "expanded_bronze_18": 128,
-        "silver_state18": 64,
-        "gold_state18": 64,
-        "platinum_state18": 64,
-        "issuer15_count": 3,
-        "issuer16_count": 3,
-        "issuer17_count": 3,
-        "issuer18_count": 1,
-        "issuer15_0": 128,
-        "issuer15_0_name": "HMO Louisiana, Inc.",
-        "issuer15_1": 128,
-        "issuer15_1_name": "Louisiana Health Service & Indemnity Company",
-        "issuer15_2": 320,
-        "issuer15_2_name": "Vantage Health Plan, Inc.",
-        "issuer16_0": 128,
-        "issuer16_0_name": "HMO Louisiana, Inc.",
-        "issuer16_1": 128,
-        "issuer16_1_name": "Louisiana Health Service & Indemnity Company",
-        "issuer16_2": 320,
-        "issuer16_2_name": "Vantage Health Plan, Inc.",
-        "issuer17_0": 128,
-        "issuer17_0_name": "HMO Louisiana, Inc.",
-        "issuer17_1": 128,
-        "issuer17_1_name": "Louisiana Health Service & Indemnity Company",
-        "issuer17_2": 320,
-        "issuer17_2_name": "Vantage Health Plan, Inc.",
-        "issuer18_0": 320,
-        "issuer18_0_name": "POS",
-        "PPO15": 128,
-        "POS15": 448,
-        "PPO16": 128,
-        "POS16": 448,
-        "PPO17": 128,
-        "POS17": 448
+        "state_code": "LA"
       },
       "geometry": {
         "type": "Polygon",
@@ -8662,66 +8099,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "19": {
       "type": "Feature",
       "id": "23",
       "properties": {
         "name": "Maine",
         "density": 43.04,
         "state_code": "ME",
-        "state_count15": 376,
-        "state_count16": 376,
-        "state_count17": 280,
-        "state_count18": 64,
-        "bronze_state15": 112,
-        "silver_state15": 158,
-        "gold_state15": 90,
-        "platinum_state15": 16,
-        "bronze_state16": 112,
-        "silver_state16": 158,
-        "gold_state16": 90,
-        "platinum_state16": 16,
-        "bronze_state17": 64,
-        "silver_state17": 142,
-        "gold_state17": 74,
-        "bronze_state18": 16,
-        "silver_state18": 32,
-        "gold_state18": 16,
-        "issuer15_count": 3,
-        "issuer16_count": 3,
-        "issuer17_count": 3,
-        "issuer18_count": 1,
-        "issuer15_0": 64,
-        "issuer15_0_name": "Anthem Health Plans of ME(Anthem BCBS)",
-        "issuer15_1": 136,
-        "issuer15_1_name": "Harvard Pilgrim  Health Care Inc.",
-        "issuer15_2": 176,
-        "issuer15_2_name": "Maine Community Health Options",
-        "issuer16_0": 64,
-        "issuer16_0_name": "Anthem Health Plans of ME(Anthem BCBS)",
-        "issuer16_1": 136,
-        "issuer16_1_name": "Harvard Pilgrim  Health Care Inc.",
-        "issuer16_2": 176,
-        "issuer16_2_name": "Maine Community Health Options",
-        "issuer17_0": 80,
-        "issuer17_0_name": "Anthem Health Plans of ME(Anthem BCBS)",
-        "issuer17_1": 136,
-        "issuer17_1_name": "Harvard Pilgrim  Health Care Inc.",
-        "issuer17_2": 64,
-        "issuer17_2_name": "Maine Community Health Options",
-        "issuer18_0": 64,
-        "issuer18_0_name": "PPO",
-        "PPO15": 192,
-        "HMO15": 184,
-        "PPO16": 192,
-        "HMO16": 184,
-        "PPO17": 112,
-        "HMO17": 168
+        "state_count15": 576
       },
       "geometry": {
         "type": "Polygon",
@@ -8994,22 +8380,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "20": {
       "type": "Feature",
       "id": "24",
       "properties": {
         "name": "Maryland",
         "density": 596.3,
         "state_code": "MD",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_count15": 376
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -9280,22 +8659,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "21": {
       "type": "Feature",
       "id": "25",
       "properties": {
         "name": "Massachusetts",
         "density": 840.2,
-        "state_code": "MA",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_code": "MA"
       },
       "geometry": {
         "type": "Polygon",
@@ -9444,80 +8815,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "22": {
       "type": "Feature",
       "id": "26",
       "properties": {
         "name": "Michigan",
         "density": 173.9,
-        "state_code": "MI",
-        "state_count15": 801,
-        "state_count16": 801,
-        "state_count17": 767,
-        "state_count18": 448,
-        "bronze_state15": 214,
-        "silver_state15": 268,
-        "gold_state15": 268,
-        "platinum_state15": 51,
-        "bronze_state16": 214,
-        "silver_state16": 268,
-        "gold_state16": 268,
-        "platinum_state16": 51,
-        "bronze_state17": 203,
-        "silver_state17": 243,
-        "gold_state17": 243,
-        "platinum_state17": 78,
-        "bronze_state18": 64,
-        "silver_state18": 128,
-        "gold_state18": 128,
-        "platinum_state18": 128,
-        "issuer15_count": 5,
-        "issuer16_count": 5,
-        "issuer17_count": 3,
-        "issuer18_count": 1,
-        "issuer15_0": 292,
-        "issuer15_0_name": "Blue Care Network of Michigan",
-        "issuer15_1": 166,
-        "issuer15_1_name": "Blue Cross Blue Shield of Michigan Mutual Insurance Company",
-        "issuer15_2": 105,
-        "issuer15_2_name": "McLaren Health Plan Community",
-        "issuer15_3": 40,
-        "issuer15_3_name": "Total Health Care USA, Inc.",
-        "issuer15_4": 198,
-        "issuer15_4_name": "UnitedHealthcare Insurance Company",
-        "issuer16_0": 292,
-        "issuer16_0_name": "Blue Care Network of Michigan",
-        "issuer16_1": 166,
-        "issuer16_1_name": "Blue Cross Blue Shield of Michigan Mutual Insurance Company",
-        "issuer16_2": 105,
-        "issuer16_2_name": "McLaren Health Plan Community",
-        "issuer16_3": 40,
-        "issuer16_3_name": "Total Health Care USA, Inc.",
-        "issuer16_4": 198,
-        "issuer16_4_name": "UnitedHealthcare Insurance Company",
-        "issuer17_0": 328,
-        "issuer17_0_name": "Blue Care Network of Michigan",
-        "issuer17_1": 166,
-        "issuer17_1_name": "Blue Cross Blue Shield of Michigan Mutual Insurance Company",
-        "issuer17_2": 273,
-        "issuer17_2_name": "McLaren Health Plan Community",
-        "issuer18_0": 448,
-        "issuer18_0_name": "HMO",
-        "EPO15": 130,
-        "PPO15": 166,
-        "HMO15": 437,
-        "POS15": 68,
-        "EPO16": 130,
-        "PPO16": 166,
-        "HMO16": 437,
-        "POS16": 68,
-        "PPO17": 166,
-        "HMO17": 601
+        "state_code": "MI"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -10148,22 +9453,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "23": {
       "type": "Feature",
       "id": "27",
       "properties": {
         "name": "Minnesota",
         "density": 67.14,
         "state_code": "MN",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_count15": 801
       },
       "geometry": {
         "type": "Polygon",
@@ -10504,22 +9802,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "24": {
       "type": "Feature",
       "id": "28",
       "properties": {
         "name": "Mississippi",
         "density": 63.5,
-        "state_code": "MS",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_code": "MS"
       },
       "geometry": {
         "type": "Polygon",
@@ -10712,49 +10002,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "25": {
       "type": "Feature",
       "id": "29",
       "properties": {
         "name": "Missouri",
         "density": 87.26,
-        "state_code": "MO",
-        "state_count15": 315,
-        "state_count16": 315,
-        "state_count17": 315,
-        "bronze_state15": 85,
-        "silver_state15": 115,
-        "gold_state15": 115,
-        "bronze_state16": 85,
-        "silver_state16": 115,
-        "gold_state16": 115,
-        "bronze_state17": 85,
-        "silver_state17": 115,
-        "gold_state17": 115,
-        "issuer15_count": 2,
-        "issuer16_count": 2,
-        "issuer17_count": 2,
-        "issuer18_count": 0,
-        "issuer15_0": 60,
-        "issuer15_0_name": "Blue Cross and Blue Shield of Kansas City",
-        "issuer15_1": 255,
-        "issuer15_1_name": "Healthy Alliance Life Co(Anthem BCBS)",
-        "issuer16_0": 60,
-        "issuer16_0_name": "Blue Cross and Blue Shield of Kansas City",
-        "issuer16_1": 255,
-        "issuer16_1_name": "Healthy Alliance Life Co(Anthem BCBS)",
-        "issuer17_0": 60,
-        "issuer17_0_name": "Blue Cross and Blue Shield of Kansas City",
-        "issuer17_1": 255,
-        "issuer17_1_name": "Healthy Alliance Life Co(Anthem BCBS)",
-        "PPO15": 315,
-        "PPO16": 315,
-        "PPO17": 315
+        "state_code": "MO"
       },
       "geometry": {
         "type": "Polygon",
@@ -10975,62 +10230,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "26": {
       "type": "Feature",
       "id": "30",
       "properties": {
         "name": "Montana",
         "density": 6.858,
         "state_code": "MT",
-        "state_count15": 2128,
-        "state_count16": 2128,
-        "state_count17": 1155,
-        "state_count18": 1617,
-        "bronze_state15": 672,
-        "silver_state15": 840,
-        "gold_state15": 504,
-        "platinum_state15": 112,
-        "bronze_state16": 672,
-        "silver_state16": 840,
-        "gold_state16": 504,
-        "platinum_state16": 112,
-        "bronze_state17": 238,
-        "silver_state17": 679,
-        "gold_state17": 238,
-        "bronze_state18": 413,
-        "expanded_bronze_18": 112,
-        "silver_state18": 728,
-        "gold_state18": 364,
-        "issuer15_count": 3,
-        "issuer16_count": 3,
-        "issuer17_count": 2,
-        "issuer18_count": 1,
-        "issuer15_0": 336,
-        "issuer15_0_name": "Blue Cross and Blue Shield of Montana",
-        "issuer15_1": 560,
-        "issuer15_1_name": "Montana Health Cooperative",
-        "issuer15_2": 1232,
-        "issuer15_2_name": "PacificSource Health Plans",
-        "issuer16_0": 336,
-        "issuer16_0_name": "Blue Cross and Blue Shield of Montana",
-        "issuer16_1": 560,
-        "issuer16_1_name": "Montana Health Cooperative",
-        "issuer16_2": 1232,
-        "issuer16_2_name": "PacificSource Health Plans",
-        "issuer17_0": 336,
-        "issuer17_0_name": "Blue Cross and Blue Shield of Montana",
-        "issuer17_1": 819,
-        "issuer17_1_name": "PacificSource Health Plans",
-        "issuer18_0": 1617,
-        "issuer18_0_name": "PPO",
-        "PPO15": 2128,
-        "PPO16": 2128,
-        "PPO17": 1155
+        "state_count15": 315
       },
       "geometry": {
         "type": "Polygon",
@@ -11247,34 +10455,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "27": {
       "type": "Feature",
       "id": "31",
       "properties": {
         "name": "Nebraska",
         "density": 23.97,
         "state_code": "NE",
-        "state_count15": 186,
-        "state_count16": 186,
-        "silver_state15": 93,
-        "gold_state15": 93,
-        "silver_state16": 93,
-        "gold_state16": 93,
-        "issuer15_count": 1,
-        "issuer16_count": 1,
-        "issuer17_count": 0,
-        "issuer18_count": 0,
-        "issuer15_0": 186,
-        "issuer15_0_name": "Blue Cross and Blue Shield of Nebraska",
-        "issuer16_0": 186,
-        "issuer16_0_name": "Blue Cross and Blue Shield of Nebraska",
-        "PPO15": 186,
-        "PPO16": 186
+        "state_count15": 2128
       },
       "geometry": {
         "type": "Polygon",
@@ -11399,43 +10588,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "28": {
       "type": "Feature",
       "id": "32",
       "properties": {
         "name": "Nevada",
         "density": 24.8,
         "state_code": "NV",
-        "state_count15": 51,
-        "state_count16": 51,
-        "state_count17": 51,
-        "bronze_state15": 17,
-        "silver_state15": 17,
-        "gold_state15": 17,
-        "bronze_state16": 17,
-        "silver_state16": 17,
-        "gold_state16": 17,
-        "bronze_state17": 17,
-        "silver_state17": 17,
-        "gold_state17": 17,
-        "issuer15_count": 1,
-        "issuer16_count": 1,
-        "issuer17_count": 1,
-        "issuer18_count": 0,
-        "issuer15_0": 51,
-        "issuer15_0_name": "HMO Colorado, Inc., dba HMO Nevada",
-        "issuer16_0": 51,
-        "issuer16_0_name": "HMO Colorado, Inc., dba HMO Nevada",
-        "issuer17_0": 51,
-        "issuer17_0_name": "HMO Colorado, Inc., dba HMO Nevada",
-        "HMO15": 51,
-        "HMO16": 51,
-        "HMO17": 51
+        "state_count15": 186
       },
       "geometry": {
         "type": "Polygon",
@@ -11528,69 +10689,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "29": {
       "type": "Feature",
       "id": "33",
       "properties": {
         "name": "New Hampshire",
         "density": 147,
         "state_code": "NH",
-        "state_count15": 292,
-        "state_count16": 292,
-        "state_count17": 167,
-        "state_count18": 60,
-        "bronze_state15": 88,
-        "silver_state15": 126,
-        "gold_state15": 68,
-        "platinum_state15": 10,
-        "bronze_state16": 88,
-        "silver_state16": 126,
-        "gold_state16": 68,
-        "platinum_state16": 10,
-        "bronze_state17": 40,
-        "silver_state17": 87,
-        "gold_state17": 40,
-        "bronze_state18": 20,
-        "silver_state18": 20,
-        "gold_state18": 20,
-        "issuer15_count": 4,
-        "issuer16_count": 4,
-        "issuer17_count": 3,
-        "issuer18_count": 1,
-        "issuer15_0": 95,
-        "issuer15_0_name": "Harvard Pilgrim Health Care of NE",
-        "issuer15_1": 110,
-        "issuer15_1_name": "Maine Community Health Options",
-        "issuer15_2": 60,
-        "issuer15_2_name": "Matthew Thornton Hlth Plan(Anthem BCBS)",
-        "issuer15_3": 27,
-        "issuer15_3_name": "Minuteman Health, Inc",
-        "issuer16_0": 95,
-        "issuer16_0_name": "Harvard Pilgrim Health Care of NE",
-        "issuer16_1": 110,
-        "issuer16_1_name": "Maine Community Health Options",
-        "issuer16_2": 60,
-        "issuer16_2_name": "Matthew Thornton Hlth Plan(Anthem BCBS)",
-        "issuer16_3": 27,
-        "issuer16_3_name": "Minuteman Health, Inc",
-        "issuer17_0": 77,
-        "issuer17_0_name": "Harvard Pilgrim Health Care of NE",
-        "issuer17_1": 60,
-        "issuer17_1_name": "Matthew Thornton Hlth Plan(Anthem BCBS)",
-        "issuer17_2": 30,
-        "issuer17_2_name": "Minuteman Health, Inc",
-        "issuer18_0": 60,
-        "issuer18_0_name": "HMO",
-        "PPO15": 110,
-        "HMO15": 182,
-        "PPO16": 110,
-        "HMO16": 182,
-        "HMO17": 167
+        "state_count15": 51
       },
       "geometry": {
         "type": "Polygon",
@@ -11711,77 +10818,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "30": {
       "type": "Feature",
       "id": "34",
       "properties": {
         "name": "New Jersey",
         "density": 1189,
         "state_code": "NJ",
-        "state_count15": 1044,
-        "state_count16": 1044,
-        "state_count17": 644,
-        "state_count18": 210,
-        "bronze_state15": 218,
-        "silver_state15": 339,
-        "gold_state15": 300,
-        "platinum_state15": 187,
-        "bronze_state16": 218,
-        "silver_state16": 339,
-        "gold_state16": 300,
-        "platinum_state16": 187,
-        "bronze_state17": 131,
-        "silver_state17": 193,
-        "gold_state17": 195,
-        "platinum_state17": 125,
-        "expanded_bronze_18": 42,
-        "silver_state18": 63,
-        "gold_state18": 84,
-        "platinum_state18": 21,
-        "issuer15_count": 4,
-        "issuer16_count": 4,
-        "issuer17_count": 3,
-        "issuer18_count": 2,
-        "issuer15_0": 60,
-        "issuer15_0_name": "AmeriHealth HMO, Inc.",
-        "issuer15_1": 374,
-        "issuer15_1_name": "AmeriHealth Ins Company of New Jersey",
-        "issuer15_2": 337,
-        "issuer15_2_name": "Freelancers CO-OP of New Jersey, Inc.",
-        "issuer15_3": 273,
-        "issuer15_3_name": "Horizon Healthcare Services, Inc.",
-        "issuer16_0": 60,
-        "issuer16_0_name": "AmeriHealth HMO, Inc.",
-        "issuer16_1": 374,
-        "issuer16_1_name": "AmeriHealth Ins Company of New Jersey",
-        "issuer16_2": 337,
-        "issuer16_2_name": "Freelancers CO-OP of New Jersey, Inc.",
-        "issuer16_3": 273,
-        "issuer16_3_name": "Horizon Healthcare Services, Inc.",
-        "issuer17_0": 60,
-        "issuer17_0_name": "AmeriHealth HMO, Inc.",
-        "issuer17_1": 374,
-        "issuer17_1_name": "AmeriHealth Ins Company of New Jersey",
-        "issuer17_2": 210,
-        "issuer17_2_name": "Horizon Healthcare Services, Inc.",
-        "issuer18_0": 189,
-        "issuer18_0_name": "EPO",
-        "issuer18_1": 21,
-        "issuer18_1_name": "POS",
-        "EPO15": 858,
-        "HMO15": 60,
-        "POS15": 126,
-        "EPO16": 858,
-        "HMO16": 60,
-        "POS16": 126,
-        "EPO17": 458,
-        "HMO17": 60,
-        "POS17": 126
+        "state_count15": 292
       },
       "geometry": {
         "type": "Polygon",
@@ -11918,22 +10963,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "31": {
       "type": "Feature",
       "id": "35",
       "properties": {
         "name": "New Mexico",
         "density": 17.16,
         "state_code": "NM",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_count15": 1044
       },
       "geometry": {
         "type": "Polygon",
@@ -12010,22 +11048,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "32": {
       "type": "Feature",
       "id": "36",
       "properties": {
         "name": "New York",
         "density": 412.3,
-        "state_code": "NY",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_code": "NY"
       },
       "geometry": {
         "type": "Polygon",
@@ -12306,49 +11336,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "33": {
       "type": "Feature",
       "id": "37",
       "properties": {
         "name": "North Carolina",
         "density": 198.2,
-        "state_code": "NC",
-        "state_count15": 899,
-        "state_count16": 899,
-        "state_count17": 899,
-        "bronze_state15": 100,
-        "silver_state15": 333,
-        "gold_state15": 233,
-        "platinum_state15": 233,
-        "bronze_state16": 100,
-        "silver_state16": 333,
-        "gold_state16": 233,
-        "platinum_state16": 233,
-        "bronze_state17": 100,
-        "silver_state17": 333,
-        "gold_state17": 233,
-        "platinum_state17": 233,
-        "issuer15_count": 1,
-        "issuer16_count": 1,
-        "issuer17_count": 1,
-        "issuer18_count": 0,
-        "issuer15_0": 899,
-        "issuer15_0_name": "Blue Cross and Blue Shield of NC",
-        "issuer16_0": 899,
-        "issuer16_0_name": "Blue Cross and Blue Shield of NC",
-        "issuer17_0": 899,
-        "issuer17_0_name": "Blue Cross and Blue Shield of NC",
-        "PPO15": 800,
-        "POS15": 99,
-        "PPO16": 800,
-        "POS16": 99,
-        "PPO17": 800,
-        "POS17": 99
+        "state_code": "NC"
       },
       "geometry": {
         "type": "Polygon",
@@ -12601,62 +11596,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "34": {
       "type": "Feature",
       "id": "38",
       "properties": {
         "name": "North Dakota",
         "density": 9.916,
         "state_code": "ND",
-        "state_count15": 583,
-        "state_count16": 583,
-        "state_count17": 444,
-        "state_count18": 464,
-        "bronze_state15": 106,
-        "silver_state15": 212,
-        "gold_state15": 159,
-        "platinum_state15": 106,
-        "bronze_state16": 106,
-        "silver_state16": 212,
-        "gold_state16": 159,
-        "platinum_state16": 106,
-        "bronze_state17": 116,
-        "silver_state17": 169,
-        "gold_state17": 106,
-        "platinum_state17": 53,
-        "expanded_bronze_18": 116,
-        "silver_state18": 232,
-        "gold_state18": 58,
-        "platinum_state18": 58,
-        "issuer15_count": 2,
-        "issuer16_count": 2,
-        "issuer17_count": 2,
-        "issuer18_count": 1,
-        "issuer15_0": 106,
-        "issuer15_0_name": "Blue Cross Blue Shield of North Dakota",
-        "issuer15_1": 477,
-        "issuer15_1_name": "Sanford Health Plan",
-        "issuer16_0": 106,
-        "issuer16_0_name": "Blue Cross Blue Shield of North Dakota",
-        "issuer16_1": 477,
-        "issuer16_1_name": "Sanford Health Plan",
-        "issuer17_0": 106,
-        "issuer17_0_name": "Blue Cross Blue Shield of North Dakota",
-        "issuer17_1": 338,
-        "issuer17_1_name": "Sanford Health Plan",
-        "issuer18_0": 464,
-        "issuer18_0_name": "HMO",
-        "PPO15": 106,
-        "HMO15": 477,
-        "PPO16": 106,
-        "HMO16": 477,
-        "PPO17": 106,
-        "HMO17": 338
+        "state_count15": 899
       },
       "geometry": {
         "type": "Polygon",
@@ -12729,71 +11677,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "35": {
       "type": "Feature",
       "id": "39",
       "properties": {
         "name": "Ohio",
         "density": 281.9,
         "state_code": "OH",
-        "state_count15": 800,
-        "state_count16": 800,
-        "state_count17": 812,
-        "state_count18": 288,
-        "bronze_state15": 148,
-        "silver_state15": 320,
-        "gold_state15": 272,
-        "platinum_state15": 60,
-        "bronze_state16": 148,
-        "silver_state16": 320,
-        "gold_state16": 272,
-        "platinum_state16": 60,
-        "bronze_state17": 160,
-        "silver_state17": 296,
-        "gold_state17": 296,
-        "platinum_state17": 60,
-        "bronze_state18": 48,
-        "silver_state18": 120,
-        "gold_state18": 72,
-        "platinum_state18": 48,
-        "issuer15_count": 4,
-        "issuer16_count": 4,
-        "issuer17_count": 4,
-        "issuer18_count": 1,
-        "issuer15_0": 240,
-        "issuer15_0_name": "AultCare Insurance Company",
-        "issuer15_1": 264,
-        "issuer15_1_name": "Community Insurance Company(Anthem BCBS)",
-        "issuer15_2": 176,
-        "issuer15_2_name": "Medical Health Insuring Corp. of Ohio",
-        "issuer15_3": 120,
-        "issuer15_3_name": "Summa Insurance Company, Inc.",
-        "issuer16_0": 240,
-        "issuer16_0_name": "AultCare Insurance Company",
-        "issuer16_1": 264,
-        "issuer16_1_name": "Community Insurance Company(Anthem BCBS)",
-        "issuer16_2": 176,
-        "issuer16_2_name": "Medical Health Insuring Corp. of Ohio",
-        "issuer16_3": 120,
-        "issuer16_3_name": "Summa Insurance Company, Inc.",
-        "issuer17_0": 228,
-        "issuer17_0_name": "AultCare Insurance Company",
-        "issuer17_1": 264,
-        "issuer17_1_name": "Community Insurance Company(Anthem BCBS)",
-        "issuer17_2": 176,
-        "issuer17_2_name": "Medical Health Insuring Corp. of Ohio",
-        "issuer17_3": 144,
-        "issuer17_3_name": "Summa Insurance Company, Inc.",
-        "issuer18_0": 288,
-        "issuer18_0_name": "PPO",
-        "PPO15": 800,
-        "PPO16": 800,
-        "PPO17": 812
+        "state_count15": 583
       },
       "geometry": {
         "type": "Polygon",
@@ -12990,71 +11882,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "36": {
       "type": "Feature",
       "id": "40",
       "properties": {
         "name": "Oklahoma",
         "density": 55.22,
         "state_code": "OK",
-        "state_count15": 2281,
-        "state_count16": 2281,
-        "state_count17": 2050,
-        "state_count18": 324,
-        "bronze_state15": 509,
-        "silver_state15": 880,
-        "gold_state15": 747,
-        "platinum_state15": 145,
-        "bronze_state16": 509,
-        "silver_state16": 880,
-        "gold_state16": 747,
-        "platinum_state16": 145,
-        "bronze_state17": 480,
-        "silver_state17": 961,
-        "gold_state17": 491,
-        "platinum_state17": 118,
-        "bronze_state18": 36,
-        "expanded_bronze_18": 24,
-        "silver_state18": 132,
-        "gold_state18": 96,
-        "platinum_state18": 36,
-        "issuer15_count": 3,
-        "issuer16_count": 3,
-        "issuer17_count": 3,
-        "issuer18_count": 2,
-        "issuer15_0": 1392,
-        "issuer15_0_name": "Blue Cross Blue Shield of Oklahoma",
-        "issuer15_1": 729,
-        "issuer15_1_name": "CommunityCare HMO Inc.",
-        "issuer15_2": 160,
-        "issuer15_2_name": "CommunityCare Life & Health Insurance Co",
-        "issuer16_0": 1392,
-        "issuer16_0_name": "Blue Cross Blue Shield of Oklahoma",
-        "issuer16_1": 729,
-        "issuer16_1_name": "CommunityCare HMO Inc.",
-        "issuer16_2": 160,
-        "issuer16_2_name": "CommunityCare Life & Health Insurance Co",
-        "issuer17_0": 1248,
-        "issuer17_0_name": "Blue Cross Blue Shield of Oklahoma",
-        "issuer17_1": 702,
-        "issuer17_1_name": "CommunityCare HMO Inc.",
-        "issuer17_2": 100,
-        "issuer17_2_name": "CommunityCare Life & Health Insurance Co",
-        "issuer18_0": 192,
-        "issuer18_0_name": "HMO",
-        "issuer18_1": 132,
-        "issuer18_1_name": "PPO",
-        "PPO15": 1552,
-        "HMO15": 729,
-        "PPO16": 1552,
-        "HMO16": 729,
-        "PPO17": 1348,
-        "HMO17": 702
+        "state_count15": 800
       },
       "geometry": {
         "type": "Polygon",
@@ -13243,22 +12079,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "37": {
       "type": "Feature",
       "id": "41",
       "properties": {
         "name": "Oregon",
         "density": 40.33,
         "state_code": "OR",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_count15": 2281
       },
       "geometry": {
         "type": "Polygon",
@@ -13491,110 +12320,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "38": {
       "type": "Feature",
       "id": "42",
       "properties": {
         "name": "Pennsylvania",
         "density": 284.3,
-        "state_code": "PA",
-        "state_count15": 2696,
-        "state_count16": 2696,
-        "state_count17": 1206,
-        "state_count18": 2064,
-        "bronze_state15": 164,
-        "silver_state15": 916,
-        "gold_state15": 1080,
-        "platinum_state15": 536,
-        "bronze_state16": 164,
-        "silver_state16": 916,
-        "gold_state16": 1080,
-        "platinum_state16": 536,
-        "bronze_state17": 156,
-        "silver_state17": 287,
-        "gold_state17": 501,
-        "platinum_state17": 262,
-        "bronze_state18": 177,
-        "silver_state18": 285,
-        "gold_state18": 1146,
-        "platinum_state18": 456,
-        "issuer15_count": 10,
-        "issuer16_count": 10,
-        "issuer17_count": 5,
-        "issuer18_count": 3,
-        "issuer15_0": 105,
-        "issuer15_0_name": "Capital Advantage Assurance Company",
-        "issuer15_1": 143,
-        "issuer15_1_name": "First Priority Life Insurance Company, Inc.",
-        "issuer15_2": 165,
-        "issuer15_2_name": "Highmark Health Insurance Company",
-        "issuer15_3": 450,
-        "issuer15_3_name": "Highmark Inc.",
-        "issuer15_4": 105,
-        "issuer15_4_name": "Independence Blue Cross (QCC Ins. Co.)",
-        "issuer15_5": 116,
-        "issuer15_5_name": "Keystone Health Plan Central",
-        "issuer15_6": 110,
-        "issuer15_6_name": "Keystone Health Plan East, Inc",
-        "issuer15_7": 168,
-        "issuer15_7_name": "UPMC Health Coverage, Inc.",
-        "issuer15_8": 1066,
-        "issuer15_8_name": "UPMC Health Options, Inc.",
-        "issuer15_9": 268,
-        "issuer15_9_name": "UnitedHealthcare Insurance Company",
-        "issuer16_0": 105,
-        "issuer16_0_name": "Capital Advantage Assurance Company",
-        "issuer16_1": 143,
-        "issuer16_1_name": "First Priority Life Insurance Company, Inc.",
-        "issuer16_2": 165,
-        "issuer16_2_name": "Highmark Health Insurance Company",
-        "issuer16_3": 450,
-        "issuer16_3_name": "Highmark Inc.",
-        "issuer16_4": 105,
-        "issuer16_4_name": "Independence Blue Cross (QCC Ins. Co.)",
-        "issuer16_5": 116,
-        "issuer16_5_name": "Keystone Health Plan Central",
-        "issuer16_6": 110,
-        "issuer16_6_name": "Keystone Health Plan East, Inc",
-        "issuer16_7": 168,
-        "issuer16_7_name": "UPMC Health Coverage, Inc.",
-        "issuer16_8": 1066,
-        "issuer16_8_name": "UPMC Health Options, Inc.",
-        "issuer16_9": 268,
-        "issuer16_9_name": "UnitedHealthcare Insurance Company",
-        "issuer17_0": 170,
-        "issuer17_0_name": "Highmark Health Insurance Company",
-        "issuer17_1": 95,
-        "issuer17_1_name": "Independence Blue Cross (QCC Ins. Co.)",
-        "issuer17_2": 110,
-        "issuer17_2_name": "Keystone Health Plan East, Inc",
-        "issuer17_3": 196,
-        "issuer17_3_name": "UPMC Health Coverage, Inc.",
-        "issuer17_4": 635,
-        "issuer17_4_name": "UPMC Health Options, Inc.",
-        "issuer18_0": 566,
-        "issuer18_0_name": "EPO",
-        "issuer18_1": 504,
-        "issuer18_1_name": "HMO",
-        "issuer18_2": 994,
-        "issuer18_2_name": "PPO",
-        "EPO15": 521,
-        "PPO15": 1513,
-        "HMO15": 394,
-        "POS15": 268,
-        "EPO16": 521,
-        "PPO16": 1513,
-        "HMO16": 394,
-        "POS16": 268,
-        "EPO17": 253,
-        "PPO17": 647,
-        "HMO17": 256,
-        "POS17": 50
+        "state_code": "PA"
       },
       "geometry": {
         "type": "Polygon",
@@ -13735,22 +12468,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "39": {
       "type": "Feature",
       "id": "44",
       "properties": {
         "name": "Rhode Island",
         "density": 1006,
         "state_code": "RI",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_count15": 2696
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -13825,46 +12551,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "40": {
       "type": "Feature",
       "id": "45",
       "properties": {
         "name": "South Carolina",
         "density": 155.4,
-        "state_code": "SC",
-        "state_count15": 1978,
-        "state_count16": 1978,
-        "state_count17": 92,
-        "bronze_state15": 414,
-        "silver_state15": 828,
-        "gold_state15": 736,
-        "bronze_state16": 414,
-        "silver_state16": 828,
-        "gold_state16": 736,
-        "silver_state17": 46,
-        "gold_state17": 46,
-        "issuer15_count": 2,
-        "issuer16_count": 2,
-        "issuer17_count": 1,
-        "issuer18_count": 0,
-        "issuer15_0": 92,
-        "issuer15_0_name": "Blue Cross and Blue Shield of South Carolina",
-        "issuer15_1": 1886,
-        "issuer15_1_name": "BlueChoice HealthPlan of South Carolina, Inc.",
-        "issuer16_0": 92,
-        "issuer16_0_name": "Blue Cross and Blue Shield of South Carolina",
-        "issuer16_1": 1886,
-        "issuer16_1_name": "BlueChoice HealthPlan of South Carolina, Inc.",
-        "issuer17_0": 92,
-        "issuer17_0_name": "Blue Cross and Blue Shield of South Carolina",
-        "PPO15": 1978,
-        "PPO16": 1978,
-        "PPO17": 92
+        "state_code": "SC"
       },
       "geometry": {
         "type": "Polygon",
@@ -14049,63 +12743,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "41": {
       "type": "Feature",
       "id": "46",
       "properties": {
         "name": "South Dakota",
         "density": 98.07,
         "state_code": "SD",
-        "state_count15": 1122,
-        "state_count16": 1122,
-        "state_count17": 990,
-        "state_count18": 544,
-        "bronze_state15": 264,
-        "silver_state15": 396,
-        "gold_state15": 330,
-        "platinum_state15": 132,
-        "bronze_state16": 264,
-        "silver_state16": 396,
-        "gold_state16": 330,
-        "platinum_state16": 132,
-        "bronze_state17": 264,
-        "silver_state17": 330,
-        "gold_state17": 264,
-        "platinum_state17": 132,
-        "bronze_state18": 68,
-        "expanded_bronze_18": 68,
-        "silver_state18": 272,
-        "gold_state18": 68,
-        "platinum_state18": 68,
-        "issuer15_count": 2,
-        "issuer16_count": 2,
-        "issuer17_count": 2,
-        "issuer18_count": 1,
-        "issuer15_0": 594,
-        "issuer15_0_name": "Avera Health Plans, Inc.",
-        "issuer15_1": 528,
-        "issuer15_1_name": "Sanford Health Plan",
-        "issuer16_0": 594,
-        "issuer16_0_name": "Avera Health Plans, Inc.",
-        "issuer16_1": 528,
-        "issuer16_1_name": "Sanford Health Plan",
-        "issuer17_0": 594,
-        "issuer17_0_name": "Avera Health Plans, Inc.",
-        "issuer17_1": 396,
-        "issuer17_1_name": "Sanford Health Plan",
-        "issuer18_0": 544,
-        "issuer18_0_name": "HMO",
-        "PPO15": 594,
-        "HMO15": 528,
-        "PPO16": 594,
-        "HMO16": 528,
-        "PPO17": 594,
-        "HMO17": 396
+        "state_count15": 1978
       },
       "geometry": {
         "type": "Polygon",
@@ -14230,43 +12876,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "42": {
       "type": "Feature",
       "id": "47",
       "properties": {
         "name": "Tennessee",
         "density": 88.08,
         "state_code": "TN",
-        "state_count15": 950,
-        "state_count16": 950,
-        "state_count17": 950,
-        "silver_state15": 380,
-        "gold_state15": 380,
-        "platinum_state15": 190,
-        "silver_state16": 380,
-        "gold_state16": 380,
-        "platinum_state16": 190,
-        "silver_state17": 380,
-        "gold_state17": 380,
-        "platinum_state17": 190,
-        "issuer15_count": 1,
-        "issuer16_count": 1,
-        "issuer17_count": 1,
-        "issuer18_count": 0,
-        "issuer15_0": 950,
-        "issuer15_0_name": "BlueCross BlueShield of Tennessee",
-        "issuer16_0": 950,
-        "issuer16_0_name": "BlueCross BlueShield of Tennessee",
-        "issuer17_0": 950,
-        "issuer17_0_name": "BlueCross BlueShield of Tennessee",
-        "PPO15": 950,
-        "PPO16": 950,
-        "PPO17": 950
+        "state_count15": 1122
       },
       "geometry": {
         "type": "Polygon",
@@ -14447,56 +13065,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "43": {
       "type": "Feature",
       "id": "48",
       "properties": {
         "name": "Texas",
         "density": 98.07,
         "state_code": "TX",
-        "state_count15": 5144,
-        "state_count16": 5144,
-        "state_count17": 2794,
-        "bronze_state15": 1702,
-        "silver_state15": 1702,
-        "gold_state15": 1740,
-        "bronze_state16": 1702,
-        "silver_state16": 1702,
-        "gold_state16": 1740,
-        "bronze_state17": 762,
-        "silver_state17": 1016,
-        "gold_state17": 1016,
-        "issuer15_count": 3,
-        "issuer16_count": 3,
-        "issuer17_count": 1,
-        "issuer18_count": 0,
-        "issuer15_0": 2540,
-        "issuer15_0_name": "Blue Cross Blue Shield of Texas",
-        "issuer15_1": 1080,
-        "issuer15_1_name": "SHA, LLC DBA FirstCare Health Plans",
-        "issuer15_2": 1524,
-        "issuer15_2_name": "UnitedHealthcare Insurance Company",
-        "issuer16_0": 2540,
-        "issuer16_0_name": "Blue Cross Blue Shield of Texas",
-        "issuer16_1": 1080,
-        "issuer16_1_name": "SHA, LLC DBA FirstCare Health Plans",
-        "issuer16_2": 1524,
-        "issuer16_2_name": "UnitedHealthcare Insurance Company",
-        "issuer17_0": 2794,
-        "issuer17_0_name": "Blue Cross Blue Shield of Texas",
-        "EPO15": 1524,
-        "PPO15": 1270,
-        "HMO15": 2350,
-        "EPO16": 1524,
-        "PPO16": 1270,
-        "HMO16": 2350,
-        "PPO17": 1524,
-        "HMO17": 1270
+        "state_count15": 950
       },
       "geometry": {
         "type": "Polygon",
@@ -15113,22 +13690,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "44": {
       "type": "Feature",
       "id": "49",
       "properties": {
         "name": "Utah",
         "density": 34.3,
         "state_code": "UT",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_count15": 5144
       },
       "geometry": {
         "type": "Polygon",
@@ -15185,22 +13755,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "45": {
       "type": "Feature",
       "id": "50",
       "properties": {
         "name": "Vermont",
         "density": 67.73,
-        "state_code": "VT",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_code": "VT"
       },
       "geometry": {
         "type": "Polygon",
@@ -15321,88 +13883,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "46": {
       "type": "Feature",
       "id": "51",
       "properties": {
         "name": "Virginia",
         "density": 204.5,
-        "state_code": "VA",
-        "state_count15": 1450,
-        "state_count16": 1450,
-        "state_count17": 1329,
-        "state_count18": 322,
-        "bronze_state15": 334,
-        "silver_state15": 520,
-        "gold_state15": 522,
-        "platinum_state15": 74,
-        "bronze_state16": 334,
-        "silver_state16": 520,
-        "gold_state16": 522,
-        "platinum_state16": 74,
-        "bronze_state17": 190,
-        "silver_state17": 542,
-        "gold_state17": 523,
-        "platinum_state17": 74,
-        "bronze_state18": 40,
-        "expanded_bronze_18": 20,
-        "silver_state18": 114,
-        "gold_state18": 94,
-        "platinum_state18": 54,
-        "issuer15_count": 5,
-        "issuer16_count": 5,
-        "issuer17_count": 5,
-        "issuer18_count": 3,
-        "issuer15_0": 28,
-        "issuer15_0_name": "CareFirst BlueChoice, Inc.",
-        "issuer15_1": 28,
-        "issuer15_1_name": "Group Hospitalization and Medical Services Inc.",
-        "issuer15_2": 1040,
-        "issuer15_2_name": "HealthKeepers, Inc.",
-        "issuer15_3": 54,
-        "issuer15_3_name": "Innovation Health Plan, Inc.",
-        "issuer15_4": 300,
-        "issuer15_4_name": "Kaiser Foundation Health Plan of the Mid-Atlantic States, Inc.",
-        "issuer16_0": 28,
-        "issuer16_0_name": "CareFirst BlueChoice, Inc.",
-        "issuer16_1": 28,
-        "issuer16_1_name": "Group Hospitalization and Medical Services Inc.",
-        "issuer16_2": 1040,
-        "issuer16_2_name": "HealthKeepers, Inc.",
-        "issuer16_3": 54,
-        "issuer16_3_name": "Innovation Health Plan, Inc.",
-        "issuer16_4": 300,
-        "issuer16_4_name": "Kaiser Foundation Health Plan of the Mid-Atlantic States, Inc.",
-        "issuer17_0": 21,
-        "issuer17_0_name": "CareFirst BlueChoice, Inc.",
-        "issuer17_1": 21,
-        "issuer17_1_name": "Group Hospitalization and Medical Services Inc.",
-        "issuer17_2": 910,
-        "issuer17_2_name": "HealthKeepers, Inc.",
-        "issuer17_3": 57,
-        "issuer17_3_name": "Innovation Health Plan, Inc.",
-        "issuer17_4": 320,
-        "issuer17_4_name": "Kaiser Foundation Health Plan of the Mid-Atlantic States, Inc.",
-        "issuer18_0": 294,
-        "issuer18_0_name": "HMO",
-        "issuer18_1": 7,
-        "issuer18_1_name": "POS",
-        "issuer18_2": 21,
-        "issuer18_2_name": "PPO",
-        "PPO15": 28,
-        "HMO15": 375,
-        "POS15": 1047,
-        "PPO16": 28,
-        "HMO16": 375,
-        "POS16": 1047,
-        "PPO17": 21,
-        "HMO17": 391,
-        "POS17": 917
+        "state_code": "VA"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -15741,22 +14229,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "47": {
       "type": "Feature",
       "id": "53",
       "properties": {
         "name": "Washington",
         "density": 102.6,
         "state_code": "WA",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_count15": 1450
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -16063,45 +14544,14 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "48": {
       "type": "Feature",
       "id": "54",
       "properties": {
         "name": "West Virginia",
         "density": 77.06,
-        "state_code": "WV",
-        "state_count15": 825,
-        "state_count16": 825,
-        "state_count17": 330,
-        "bronze_state15": 165,
-        "silver_state15": 330,
-        "gold_state15": 220,
-        "platinum_state15": 110,
-        "bronze_state16": 165,
-        "silver_state16": 330,
-        "gold_state16": 220,
-        "platinum_state16": 110,
-        "bronze_state17": 110,
-        "silver_state17": 165,
-        "gold_state17": 55,
-        "issuer15_count": 1,
-        "issuer16_count": 1,
-        "issuer17_count": 1,
-        "issuer18_count": 0,
-        "issuer15_0": 825,
-        "issuer15_0_name": "Highmark Blue Cross Blue Shield West Virginia",
-        "issuer16_0": 825,
-        "issuer16_0_name": "Highmark Blue Cross Blue Shield West Virginia",
-        "issuer17_0": 330,
-        "issuer17_0_name": "Highmark Blue Cross Blue Shield West Virginia",
-        "PPO15": 825,
-        "PPO16": 825,
-        "PPO17": 330
+        "state_code": "WV"
       },
       "geometry": {
         "type": "Polygon",
@@ -16370,115 +14820,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "49": {
       "type": "Feature",
       "id": "55",
       "properties": {
         "name": "Wisconsin",
         "density": 105.2,
         "state_code": "WI",
-        "state_count15": 4721,
-        "state_count16": 4721,
-        "state_count17": 3739,
-        "state_count18": 1338,
-        "bronze_state15": 648,
-        "silver_state15": 2276,
-        "gold_state15": 1290,
-        "platinum_state15": 507,
-        "bronze_state16": 648,
-        "silver_state16": 2276,
-        "gold_state16": 1290,
-        "platinum_state16": 507,
-        "bronze_state17": 503,
-        "silver_state17": 1706,
-        "gold_state17": 1230,
-        "platinum_state17": 300,
-        "bronze_state18": 211,
-        "expanded_bronze_18": 4,
-        "silver_state18": 634,
-        "gold_state18": 381,
-        "platinum_state18": 108,
-        "issuer15_count": 9,
-        "issuer16_count": 9,
-        "issuer17_count": 7,
-        "issuer18_count": 4,
-        "issuer15_0": 224,
-        "issuer15_0_name": "All Savers Insurance Company",
-        "issuer15_1": 380,
-        "issuer15_1_name": "Common Ground Healthcare Cooperative",
-        "issuer15_2": 63,
-        "issuer15_2_name": "Group Health Cooperative- SCW",
-        "issuer15_3": 154,
-        "issuer15_3_name": "Gundersen Health Plan, Inc.",
-        "issuer15_4": 272,
-        "issuer15_4_name": "Health Tradition Health Plan",
-        "issuer15_5": 64,
-        "issuer15_5_name": "MercyCare HMO, Inc.",
-        "issuer15_6": 20,
-        "issuer15_6_name": "MercyCare Insurance Company",
-        "issuer15_7": 1758,
-        "issuer15_7_name": "Security Health Plan of Wisconsin, Inc.",
-        "issuer15_8": 1786,
-        "issuer15_8_name": "WPS Health Plan, Inc.",
-        "issuer16_0": 224,
-        "issuer16_0_name": "All Savers Insurance Company",
-        "issuer16_1": 380,
-        "issuer16_1_name": "Common Ground Healthcare Cooperative",
-        "issuer16_2": 63,
-        "issuer16_2_name": "Group Health Cooperative- SCW",
-        "issuer16_3": 154,
-        "issuer16_3_name": "Gundersen Health Plan, Inc.",
-        "issuer16_4": 272,
-        "issuer16_4_name": "Health Tradition Health Plan",
-        "issuer16_5": 64,
-        "issuer16_5_name": "MercyCare HMO, Inc.",
-        "issuer16_6": 20,
-        "issuer16_6_name": "MercyCare Insurance Company",
-        "issuer16_7": 1758,
-        "issuer16_7_name": "Security Health Plan of Wisconsin, Inc.",
-        "issuer16_8": 1786,
-        "issuer16_8_name": "WPS Health Plan, Inc.",
-        "issuer17_0": 576,
-        "issuer17_0_name": "Aspirus Arise Health Plan of Wisconsin, Inc.",
-        "issuer17_1": 494,
-        "issuer17_1_name": "Common Ground Healthcare Cooperative",
-        "issuer17_2": 83,
-        "issuer17_2_name": "Group Health Cooperative of South Central Wisconsin",
-        "issuer17_3": 154,
-        "issuer17_3_name": "Gundersen Health Plan, Inc.",
-        "issuer17_4": 272,
-        "issuer17_4_name": "Health Tradition Health Plan",
-        "issuer17_5": 1296,
-        "issuer17_5_name": "Security Health Plan of Wisconsin, Inc.",
-        "issuer17_6": 864,
-        "issuer17_6_name": "WPS Health Plan, Inc.",
-        "issuer18_0": 225,
-        "issuer18_0_name": "EPO",
-        "issuer18_1": 374,
-        "issuer18_1_name": "HMO",
-        "issuer18_2": 321,
-        "issuer18_2_name": "POS",
-        "issuer18_3": 418,
-        "issuer18_3_name": "PPO",
-        "EPO15": 662,
-        "PPO15": 400,
-        "HMO15": 1990,
-        "POS15": 1477,
-        "Indemnity15": 192,
-        "EPO16": 662,
-        "PPO16": 400,
-        "HMO16": 1990,
-        "POS16": 1477,
-        "Indemnity16": 192,
-        "EPO17": 272,
-        "PPO17": 494,
-        "HMO17": 1726,
-        "POS17": 1247
+        "state_count15": 825
       },
       "geometry": {
         "type": "Polygon",
@@ -16787,42 +15137,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "50": {
       "type": "Feature",
       "id": "56",
       "properties": {
         "name": "Wyoming",
         "density": 5.851,
         "state_code": "WY",
-        "state_count15": 552,
-        "state_count16": 552,
-        "state_count17": 46,
-        "bronze_state15": 184,
-        "silver_state15": 184,
-        "gold_state15": 184,
-        "bronze_state16": 184,
-        "silver_state16": 184,
-        "gold_state16": 184,
-        "silver_state17": 23,
-        "gold_state17": 23,
-        "issuer15_count": 1,
-        "issuer16_count": 1,
-        "issuer17_count": 1,
-        "issuer18_count": 0,
-        "issuer15_0": 552,
-        "issuer15_0_name": "Blue Cross Blue Shield of Wyoming",
-        "issuer16_0": 552,
-        "issuer16_0_name": "Blue Cross Blue Shield of Wyoming",
-        "issuer17_0": 46,
-        "issuer17_0_name": "Blue Cross Blue Shield of Wyoming",
-        "PPO15": 552,
-        "PPO16": 552,
-        "PPO17": 46
+        "state_count15": 4721
       },
       "geometry": {
         "type": "Polygon",
@@ -16883,22 +15206,15 @@
           ]
         ]
       }
-    }]
-  },
-  {
-    "type": "FeatureCollection",
-    "features": [
-      {
+    },
+    "51": {
       "type": "Feature",
       "id": "72",
       "properties": {
         "name": "Puerto Rico",
         "density": 1082,
         "state_code": "PR",
-        "issuer15_count": 0,
-        "issuer16_count": 0,
-        "issuer17_count": 0,
-        "issuer18_count": 0
+        "state_count15": 552
       },
       "geometry": {
         "type": "Polygon",
@@ -16975,5 +15291,6 @@
           ]
         ]
       }
-    }]
+    }
   }
+}

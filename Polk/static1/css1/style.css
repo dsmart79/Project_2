@@ -1,16 +1,15 @@
-body {
-	padding: 0;
-	margin: 0;
+/*legend dress-up and map*/
+/* CSS from the Leaflet-Choropleth documentation */
+#map {
+	position: relative;
+	border: 1px solid black;
+	border-radius: 8px;
+	height: 600px;
+	width: 100%;  /* This means "100% of the width of its container", the .col-md-8 */
   }
   
-  #map { position:absolute; top: 0; bottom: 0; width:100%; }
-  body,
-  html {
-	height: 100%;
-  }
   
-  /* CSS from the Leaflet-Choropleth documentation */
-  .legend {
+.legend {
 	padding: 6px 8px;
 	font: 12px Arial, Helvetica, sans-serif;
 	font-weight: bold;
@@ -47,3 +46,4 @@ body {
   h1 {
 	text-align: center;
   }
+
