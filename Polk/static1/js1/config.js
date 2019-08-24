@@ -1,1 +1,0 @@
-export default const API_KEY= 'pk.eyJ1Ijoic3BvbGs0IiwiYSI6ImNqejBoOTN2cTA1aDIzZW5oZmhqbG9pOWwifQ.u_DhN7K8lF4_YQRqKSqwNQ'

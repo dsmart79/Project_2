@@ -1,11 +1,6 @@
   {
     "type": "FeatureCollection",
-<<<<<<< HEAD
     "features": {
-=======
-    "features": [
-      {
->>>>>>> 30fa840f8b685a67ead7eb930bc9553bc9cc3e2b
       "type": "Feature",
       "id": "01",
       "properties": {
